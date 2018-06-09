@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+        
+        
+         <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 android:gravity="center"
+                 style="@style/textsize4d"
+                 android:layout_width="75dp"
+                 android:layout_height="match_parent"
+                 android:text="工单:" />
+
+        <Spinner
+            android:id="@+id/xbcunbinding_mo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true"
+           />
+        
+        
+        </LinearLayout>
+        
+         
+         <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <EditText
+                 android:id="@+id/xbcunbinding_moedit"
+                 android:layout_width="match_parent"
+                 android:layout_height="33dp"
+                 android:layout_marginLeft="75dp"
+                 android:singleLine="true" 
+                 android:textSize="10sp"
+                 android:hint="输入工单尾号3位以上"
+                 />
+            
+        </LinearLayout>
+        
+         
+          <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 android:gravity="center"
+                 style="@style/textsize4d"
+                 android:layout_width="75dp"
+                 android:layout_height="match_parent"
+                 android:text="线体:" />
+
+        <Spinner
+            android:id="@+id/xbcunbinding_line"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true"
+           />
+            
+        </LinearLayout>
+        
+        
+        
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 android:gravity="center"
+                 style="@style/textsize4d"
+                 android:layout_width="75dp"
+                 android:layout_height="match_parent"
+                 android:text="批号:" />
+
+        <EditText
+            android:id="@+id/xbcunbinding_mz"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true"
+           />
+            
+        </LinearLayout>
+        
+      
+       
+    </LinearLayout>
+  
+    
+    
+     
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@color/black"
+    >
+
+           <TextView
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="1.5"
+               android:gravity="center|left"
+               android:text="料号"
+               android:textColor="@color/red" />
+           
+           <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="wrap_content"
+            android:text="库位"
+             android:textColor="@color/red"
+            android:gravity="center|left"
+             />
+           <TextView
+           android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="可解量"
+             android:textColor="@color/red"
+            android:gravity="center|left"
+             />
+           
+           
+           
+    </LinearLayout>
+    
+    
+         <ListView
+            android:id="@+id/xbcunbinding_lv"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="113dp" >
+        </ListView>
+    
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+           <EditText
+                android:id="@+id/xbcunbinding_editscan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:gravity="top"
+                android:textSize="15sp" 
+                android:focusable="false"/>
+        
+    </LinearLayout>
+    </LinearLayout>
+        
+     

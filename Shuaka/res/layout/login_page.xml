@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:orientation="vertical"
+    tools:context=".activity.LoginCheckActivity" >
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_logo" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="25dp" />
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/login_input"
+            android:hint="输入 MES系统用户名"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/login_input"
+            android:hint="输入密码"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:singleLine="true" >
+        </EditText>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="16dp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/send_button_bg"
+            android:gravity="center"
+            android:height="50dp"
+            android:text="登 录"
+            android:textSize="20dp" />
+    </LinearLayout>
+    
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="versionOnClick"
+        
+        >
+        <TextView 
+           android:layout_height="wrap_content"
+            android:layout_width="wrap_content" 
+            android:layout_toLeftOf="@+id/activity_login_page_versiontv" 
+            android:layout_alignParentBottom="true"
+            android:text="版本"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            />
+        <TextView 
+            android:id="@+id/activity_login_page_versiontv"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentRight="true"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"  
+          android:textSize="30sp"
+          android:background="@color/white"
+           android:textColor="@color/black"
+            
+            
+            
+         />
+        
+    </RelativeLayout>
+
+
+
+</LinearLayout>

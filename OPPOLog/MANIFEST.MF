@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: libs/commons-io-2.4.jar libs/jakarta-oro.jar libs/commons-net-1.4.1.jar libs/sqljdbc4.jar libs/c3p0-0.9.1.2.jar libs/commons-dbutils-1.6.jar
+Main-Class: com.deng.dirlistener.ZJPFileMonitor
+

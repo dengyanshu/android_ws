@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightskyblue"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".EyeCheckActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="504dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="0.05"
+                    android:gravity="left"
+                    android:text="工单"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp" >
+
+                <Spinner
+                    android:id="@+id/Spin_EyecheckMOID"
+                    android:layout_width="240dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.28" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.33"
+                    android:gravity="left"
+                    android:text="产品"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.29"
+                    android:gravity="left"
+                    android:text="数量"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp" >
+
+                <EditText
+                    android:id="@+id/Edit_EyecheckProductID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="2.37"
+                    android:autoText="false"
+                    android:contentDescription="@color/green"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/Edit_eyecheckquantity"
+                    android:layout_width="109dp"
+                    android:layout_height="49dp"
+                    android:autoText="false"
+                    android:contentDescription="@color/green"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="233dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="工作流"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/green" />
+
+            <EditText
+                android:id="@+id/Edit_eyeCheckWorkFlow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:autoText="false"
+                android:contentDescription="@color/green"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/TextView0112"
+                android:layout_width="233dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="已扫描不良代码"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/green" />
+
+            <EditText
+                android:id="@+id/Edit_eyeCheckErrorCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:autoText="false"
+                android:contentDescription="@color/green"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:singleLine="true"
+                android:textColor="@color/red" />
+
+            <TextView
+                android:id="@+id/TextView033"
+                android:layout_width="233dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="启动批号  或  不良代码"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/green" />
+
+            <EditText
+                android:id="@+id/Edit_eyeCheckStartSN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:autoText="false"
+                android:contentDescription="@color/green"
+                android:ems="10"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="20dp" >
+
+                <Button
+                    android:id="@+id/butt_eyecheckSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="0.45"
+                    android:text="提交"
+                    android:textColor="@color/blue" />
+
+                <Button
+                    android:id="@+id/butt_eyecheckCancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="45dp"
+                    android:layout_weight="0.28"
+                    android:text="清空不良代码"
+                    android:textColor="@color/fuchsia" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/linearLayout1"
+        layout="@layout/common_edt_sysinfo" />
+
+</RelativeLayout>

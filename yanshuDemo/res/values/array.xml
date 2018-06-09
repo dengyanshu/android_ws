@@ -1,0 +1,8 @@
+
+    <resources>
+        <string-array name="com">
+            <item >111</item>
+            <item >222</item>
+            <item >333</item>
+        </string-array>
+    </resources>

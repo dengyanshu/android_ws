@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+        <TextView
+            android:layout_width="235dp"
+            android:layout_height="60dp"
+            android:text="需要核对的IMEI的数目:" 
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/green"
+            android:visibility="gone"
+            android:id="@+id/imeicartoonboxcheck_numtextview"/>
+        <EditText 
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:id="@+id/imeicartoonboxcheck_numedit"
+            android:singleLine="true"
+            android:text="1"
+            android:selectAllOnFocus="true"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="设置需要核对IMEI的数目" 
+            android:textColor="@color/green"
+            android:id="@+id/imeicartoonboxcheck_numbutton"/>
+
+    </LinearLayout>
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="箱号"
+        android:textColor="@color/red"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        
+        
+        />
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/imeicartoonboxcheck_xianghaoedit"
+        android:singleLine="true"
+        />
+     <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="IMEI"
+        android:textColor="@color/red"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        
+        
+        />
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/imeicartoonboxcheck_imei"
+        android:singleLine="true"
+        
+        />
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="清空箱号重新核对" 
+            android:id="@+id/imeicartoonboxcheck_clearbutton"
+            android:textColor="@color/green"/>
+    <EditText 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/imeicartoonboxcheck_editscan"
+        android:background="@color/black"
+        android:layout_margin="10dp"
+        android:focusable="false"
+        
+        />
+
+</LinearLayout>

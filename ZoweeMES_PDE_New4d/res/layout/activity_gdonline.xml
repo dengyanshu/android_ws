@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 style="@style/textsize4d_small"
+                 android:layout_width="108dp"
+                 android:layout_height="match_parent"
+                 android:gravity="center"
+                 android:text="刮刀(前):" />
+
+        <EditText
+            android:id="@+id/gdonline_lotsn1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true"
+           />
+            
+        </LinearLayout>
+        
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 style="@style/textsize4d_small"
+                 android:layout_width="108dp"
+                 android:layout_height="match_parent"
+                 android:gravity="center"
+                 android:text="刮刀(后):" />
+
+        <EditText
+            android:id="@+id/gdonline_lotsn2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true"
+           />
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 style="@style/textsize4d_small"
+                 android:layout_width="66dp"
+                 android:layout_height="match_parent"
+                 android:gravity="center"
+                 android:text="工单:" />
+
+        <Spinner
+            android:id="@+id/gdonline_mo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true" />
+            
+        </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="15dp"
+             android:gravity="center_vertical|center_horizontal" >
+
+             <TextView
+                 android:layout_width="35dp"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="0.75"
+                 android:text="筛选"
+                 android:textColor="@color/red"
+                 android:textSize="14dp" />
+
+             <EditText
+                 android:id="@+id/smtshangliaoslot_moedit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="40dp"
+                 android:layout_marginLeft="8dp"
+                 android:hint="输入工单名任意关键字"
+                 android:singleLine="true"
+                 android:textSize="12dp" />
+
+         </LinearLayout>
+
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 style="@style/textsize4d_small"
+                 android:layout_width="106dp"
+                 android:layout_height="match_parent"
+                 android:gravity="center"
+                 android:text="工作中心:" />
+
+        <Spinner
+            android:id="@+id/gdonline_workcenter"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true"
+           />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 style="@style/textsize4d_small"
+                 android:layout_width="106dp"
+                 android:layout_height="match_parent"
+                 android:gravity="center"
+                 android:text="AB面:" />
+
+        <Spinner
+            android:id="@+id/gdonline_side"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true"
+           />
+            
+        </LinearLayout>
+        
+         <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 style="@style/textsize4d_small"
+                 android:layout_width="108dp"
+                 android:layout_height="match_parent"
+                 android:gravity="center"
+                 android:text="作业员:" />
+
+        <EditText
+            android:id="@+id/gdonline_employee"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true"
+           />
+            
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+   
+  
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content"        
+        
+        
+        >
+        <Button 
+            android:onClick="clickme"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24dp"
+            android:text="刮刀上线" 
+            android:textColor="@color/blue"
+            android:background="@drawable/button_bg"
+            android:layout_margin="5dp"
+            />
+        
+        
+         <Button 
+            android:onClick="clickme2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24dp"
+            android:text="刮刀下线" 
+            android:textColor="@color/blue"
+            android:background="@drawable/button_bg"
+            android:layout_margin="5dp"
+            />
+         
+           <Button 
+            android:onClick="clickme3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24dp"
+            android:text="工单替换" 
+            android:textColor="@color/blue"
+            android:background="@drawable/button_bg"
+            android:layout_margin="5dp"
+            />
+      
+     </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+           <EditText
+                android:id="@+id/gdonline_editscan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:gravity="top"
+                android:textSize="15sp" 
+                android:focusable="false"/>
+        
+    </LinearLayout>
+    </LinearLayout>
+        
+     

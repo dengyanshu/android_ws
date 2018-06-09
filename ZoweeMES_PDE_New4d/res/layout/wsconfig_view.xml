@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="fill_parent" android:layout_height="fill_parent"
+    		  android:orientation="vertical" android:background="@color/thin_back">
+     <TextView android:layout_width="wrap_content"  android:layout_height="wrap_content"
+               android:layout_gravity="center"  android:layout_marginTop="20px"  
+               android:text="@string/ws_config"
+               android:textSize="18dp"/>
+     <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                 android:layout_marginTop="10px"  >
+         <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		  	  android:orientation="vertical"  style="@style/style_5">
+    		 <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		               android:orientation="horizontal">
+    		     <TextView android:layout_width="100dp" android:layout_height="wrap_content"
+        	    	       android:text="@string/WSSpaceName" android:textSize="14dp"/>
+       			 <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+       			           android:textSize="12dp" android:singleLine="true"
+       			           android:id="@+id/edt_wsSpaceName" />
+    		 </LinearLayout>
+        
+    		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+ 					<TextView android:layout_width="100dp"  android:layout_height="wrap_content"
+       	    	  			  android:text="@string/WSDL"  android:textSize="14dp"/>
+       				<EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+				 			  android:textSize="12dp" android:singleLine="true"
+				 			  android:id="@+id/edt_wsdl"/>   			 
+    		 </LinearLayout>
+ 			<LinearLayout   android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+ 					<TextView android:layout_width="100dp" android:layout_height="wrap_content"
+        	      			  android:text="@string/WSEditon"  android:textSize="14dp"/>
+        			<EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+        	      			  android:textSize="12dp" android:singleLine="true"
+        	      			  android:inputType="number" android:id="@+id/edt_wsEdition"/>		 
+    		</LinearLayout>
+    		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+       				<TextView android:layout_width="100dp"  android:layout_height="wrap_content"
+       	    	 			  android:text="@string/WSMethod"  android:textSize="14dp"/>
+       				<EditText  android:layout_width="fill_parent" android:layout_height="wrap_content"
+       	    	  			   android:singleLine="true"
+       	    	  			   android:textSize="12dp" android:id="@+id/edt_wsMethod"/>
+    		 </LinearLayout>
+ 			<!-- <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+					<TextView  android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	      			   android:text="@string/shipment_date"/>
+        			<EditText  android:layout_width="220dp" android:layout_height="wrap_content"
+        	      		       android:layout_alignParentRight="true" android:textSize="12dp"  
+        	      		       android:id="@+id/edt_shipment_date"/>
+    		 </RelativeLayout>
+    		 -->
+    		<LinearLayout   android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+       				<TextView 	android:layout_width="100dp"  android:layout_height="wrap_content"
+       	    	  				android:text="@string/ISDOTNET"  android:textSize="14dp"
+       	    	  				android:id="@+id/lab_isDotNet"/>
+       				   <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content"
+       				               android:orientation="horizontal" android:gravity="center" 
+       				               android:id="@+id/rg_isDotNet">
+       				       <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+       				                    android:text="@string/support"  android:textSize="12dp" 
+       				                    android:id="@+id/rb_support"/>
+       				       <RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content"
+       				                    android:layout_marginLeft="20px"  android:textSize="12dp"
+       				                    android:text="@string/unsupport" android:id="@+id/rb_unsupport"/>
+       				   </RadioGroup>
+    		 </LinearLayout>
+ 			<LinearLayout   android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal"  android:layout_marginBottom="10px">
+       			<TextView android:layout_width="100dp"  android:layout_height="wrap_content"
+       	    	  		  android:text="@string/USERTICKET"  android:textSize="14dp"/>
+       			<EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+       	    	  		   android:textSize="12dp" android:singleLine="true"
+       	    	  		  android:id="@+id/edt_userTicket"/>				
+    		</LinearLayout>
+    		<!-- 
+    		<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+       			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+       	    	  		  android:text="@string/sqlSentence"/>
+       			<EditText android:layout_width="220dp" android:layout_height="wrap_content"
+       	    	  		  android:layout_alignParentRight="true" android:textSize="12dp" 
+       	    	  		  android:id="@+id/edt_sqlSentence"/>				
+    		</RelativeLayout>
+    		 -->
+       	 	<include layout="@layout/common_btngroup_setting" android:id="@+id/btnGroups" />
+    </LinearLayout>         
+    </ScrollView>
+   
+</LinearLayout>

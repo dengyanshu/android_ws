@@ -1,0 +1,93 @@
+1、broadcast_receiver步骤
+   写一个类 继承自broadcastReceiver
+  清单文件配置 intent filter  
+  复写onReceiver方法
+
+2、电话拨号器
+   getData()直接获取数据
+        需要添加权限
+    <uses-permission  android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+                 <intent-filter >
+                     <action android:name="android.intent.action.NEW_OUTGOING_CALL"/>
+                </intent-filter>
+    
+ 3、SD卡挂载和卸载
+     清单配置receiver 的时候 需要  添加scheme属性 固定写法  android  api 文档
+      <intent-filter >
+                     <!--  <action android:name="android.intent.action.MEDIA_MOUNTED"/> -->
+                      <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                      <!-- 必须配置scheme -->
+                      <data android:scheme="file"></data>
+      </intent-filter>
+  
+  
+ 4、短信广播
+               <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+                <intent-filter >
+                         <!-- GOOGLE  有屏蔽这个权限 因为安全考虑 -->
+                        <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                   </intent-filter>
+                   
+        public void onReceive(Context context, Intent intent) {
+					// TODO Auto-generated method stub
+		
+			Bundle  bundle=	intent.getExtras();
+			Object[] objs=(Object[]) bundle.get("pdus");
+			for(Object obj:objs){
+				SmsMessage  sms=SmsMessage.createFromPdu((byte[])obj);
+				System.out.println(sms.getMessageBody());
+				System.out.println(sms.getOriginatingAddress());
+				
+	}
+     
+  5、boot  restart
+      <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+      
+      <intent-filter 
+                >
+                    <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                </intent-filter>
+            
+     @Override
+	public void onReceive(Context context, Intent intent) {
+		// TODO Auto-generated method stub
+        System.out.println("here exec");
+        Intent    newIntent=new Intent();
+        newIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        newIntent.setComponent(new ComponentName(context,IntentActivity1.class));
+        context.startActivity(newIntent);
+	}
+	
+	6、自定义广播：
+	  无序广播 :
+	    sendBroadcast(intent) intent设置action  后面只要有广播接受者对象  过滤这个action就可以相应
+	  有序广播:
+	     sendOrderBroadcast（intent,...）  其中可以添加数据  getResult()可以直接获取数据
+	     <intent-filter android:priority="1000">可以设置优先级  优先级高的可以先相应 abortBroadcast（）
+	           可以终止广播
+	     
+	7、特殊的广播通知单 比如屏幕的关闭和打开  （google 考虑 如果频繁的在注册表监听广播 可能影响性能）
+	     特点：不能在清单文件注册  必须在activity中oncreate方法 注册这个receiver  摧毁的时候 销毁这个注册  
+	     
+	 8、样式和主题
+	        样式作用于控件 主题 作用于整个应用
+	    style.xml中文件写
+	     <style name="mystyle">
+	         <item name="android:layout_width">wrap_content</item>
+	     </style>
+	     
+	     <style name="my_theme">
+	        <item  name="android:backgroundcolor">#ff0000</item>
+	     </style>
+	     
+	  9、getApplicationContext  this  区别：
+	    this 获取子类实体对象
+	    getApplicationContext  获取Context对象
+	          对话框必须挂载在实体类上
+	          
+	          
+	          
+	 10、桢动画
+	   drawable 下 放很多图片  写一个  my_animation.xml 按android 的api文档标准写
+	     
+	        

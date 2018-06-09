@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical"
+    android:showDividers="middle" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+           <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="40dp" >
+
+            <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="订单"
+            android:textColor="@color/red"
+            android:textSize="14dp" />
+
+           <Spinner
+                android:id="@+id/tj_chuhuoscan_spinner1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="40dp" >
+
+            <TextView
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:text="出货单"
+            android:textColor="@color/red"
+            android:textSize="14dp" />
+
+            <Spinner
+                android:id="@+id/tj_chuhuoscan_spinner2"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1" />
+             
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+             
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+             
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="出货量"
+            android:textSize="14dp" 
+            android:textColor="@color/red"
+            android:layout_marginLeft="15dp"/>
+
+            <EditText
+            android:id="@+id/tj_chuhuoscan_info_chuhuoliang"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:textSize="10dp" 
+            android:enabled="false"
+            android:focusable="false"
+            />
+            
+             <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="出货地"
+            android:textSize="14dp" 
+            android:textColor="@color/red"
+            android:layout_marginLeft="15dp"/>
+
+            <EditText
+            android:id="@+id/tj_chuhuoscan_info_chuhuodi"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:singleLine="true"
+            android:textSize="10dp" 
+            android:enabled="false"
+            android:focusable="false"
+            />
+             
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="客户机型"
+            android:textSize="14dp" 
+            android:textColor="@color/red"
+            android:layout_marginLeft="15dp"/>
+
+            <EditText
+            android:id="@+id/tj_chuhuoscan_info_custormerjixing"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:textSize="10dp" 
+            android:enabled="false"
+            android:focusable="false"
+            />
+            
+             <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="料号"
+            android:textSize="14dp" 
+            android:textColor="@color/red"
+            android:layout_marginLeft="15dp"/>
+
+            <EditText
+            android:id="@+id/tj_chuhuoscan_info_productname"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:singleLine="true"
+            android:textSize="10dp" 
+            android:enabled="false"
+            android:focusable="false"
+            />
+             
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="箱容量"
+            android:textSize="14dp" 
+            android:textColor="@color/red"
+            android:layout_marginLeft="15dp"/>
+
+            <EditText
+            android:id="@+id/tj_chuhuoscan_info_xiangrongliang"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:textSize="10dp" 
+            android:enabled="false"
+            android:focusable="false"
+            />
+            
+             <TextView
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:text="栈容量"
+            android:textSize="14dp" 
+            android:textColor="@color/red"
+            android:layout_marginLeft="15dp"/>
+
+            <EditText
+            android:id="@+id/tj_chuhuoscan_info_zhanrongliang"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:singleLine="true"
+            android:textSize="10dp" 
+            android:enabled="false"
+            android:focusable="false"
+            />
+             
+         </LinearLayout>
+         
+         
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="出货作业：(栈板尾数最后扫描)"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:textSize="12sp" 
+            android:textStyle="italic|bold"/>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:text="栈板号"
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="left"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/tj_chuhuoscan_zhanbansn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                android:selectAllOnFocus="true"
+                >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="30dp"
+                android:text="箱号"
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="left"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/tj_chuhuoscan_xiangboxsn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                android:selectAllOnFocus="true"
+                >
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="出货："
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/tj_chuhuoscan_chuhuotongji"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                android:enabled="false"
+                android:background="@color/gold"
+                android:textColor="@color/black"
+                >
+            </EditText>
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="栈板："
+                 android:layout_marginLeft="5dp"
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/tj_chuhuoscan_zhanbantongji"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                android:enabled="false"
+                android:background="@color/gold"
+                 android:textColor="@color/black"
+                >
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="箱产品："
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp" />
+
+            <EditText
+                android:id="@+id/tj_chuhuoscan_xiangtongji"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                android:enabled="false"
+                android:background="@color/gold"
+                 android:textColor="@color/black"
+                >
+            </EditText>
+        </LinearLayout>
+
+        
+    </LinearLayout>
+    
+     
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+           <EditText
+                android:id="@+id/tj_chuhuoscan_editscan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:gravity="top"
+                android:textSize="12sp" 
+                android:focusable="false"/>
+        
+    </LinearLayout>
+    
+
+    
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+1、httpurlconnection 的提交数据到服务器
+   get请求 ：
+        直接在url中写死
+   post请求 ：
+        需要 使用connnection.getOutStream 写到服务器 
+        拿数据与以前一致 connnection.getInputStream()获取连接的输入流
+        
+        
+ 2、apache开源项目 httpclient是原始urlconnnection的封装  方便客户端实现get或者post请求 （基本没用）
+   已被google 收录在android.jar 可以直接使用
+   后面github有开源项目asycHttpClient 继续的封装 后续使用开源项目    此开源项目包括 必须子线程 后续的ui线程 都已封装好
+   当需要头文件携带更多信息的时候 需要使用原始的urlconnection
+   
+   
+3、   多线程下载原理：
+    1、读取服务器上比如 http://10.2.0.17:8080/feiq.exe 文件 
+       url.openconnection 获取urlconnection 获取contentlength
+    2、本地 用randomfile  创建本地temp.exe  设置文本长度等于上面的contentlength
+    3、for(int x=0;x<threadcount;x++){
+                      用设定好的线程数 获取文件的每个线程的起始位置  最后个特别处理
+                     开启线程 去服务器 获取连接对象  需要添加头信息 range  把feiq.exe的起始位置  通过连接对象获取inputstream
+                     然后io技术写到硬盘就好 
+       }
+    4、以上就完成了多线程下载

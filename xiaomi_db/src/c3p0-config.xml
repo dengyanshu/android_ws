@@ -1,0 +1,26 @@
+<c3p0-config>
+ 
+   
+  <default-config>
+		<property name="jdbcUrl">jdbc:sqlserver://10.2.0.25:1433;DatabaseName=OrBitXM
+		</property>
+		<property name="user">mesdev</property>
+		<property name="password">a123456789.</property>
+		<property name="driverClass">com.microsoft.sqlserver.jdbc.SQLServerDriver</property>
+		<property name="initialPoolSize">3</property>
+		<property name="maxPoolSize">6</property>
+		<property name="maxIdleTime">1000</property>
+	</default-config>
+
+
+	<named-config name="oracle_config">
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/jdbc_demo</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">root</property>
+		<property name="initialPoolSize">3</property>
+		<property name="maxPoolSize">6</property>
+		<property name="maxIdleTime">1000</property>
+	</named-config>
+
+</c3p0-config>

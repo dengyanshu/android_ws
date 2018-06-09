@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="fill_parent" android:layout_height="fill_parent"
+    		  android:orientation="vertical" android:background="@color/thin_back">
+     <TextView  android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                android:layout_gravity="center"  android:textSize="18dp"
+        	    android:text="@string/laserScan_config"  android:layout_marginTop="20px"/>
+     <ScrollView  android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:layout_marginTop="10px">
+         <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		  	  android:orientation="vertical"  style="@style/style_5">
+    		 <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+    		     <TextView android:layout_width="200dp"  android:layout_height="wrap_content"
+        	    	       android:text="@string/serialName"  android:textSize="14dp"/>
+       			 <EditText android:layout_width="fill_parent"  android:layout_height="wrap_content"
+       			           android:singleLine="true"
+       			           android:textSize="12dp"  android:id="@+id/edt_serialName"/>
+    		 </LinearLayout>
+        
+    		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+ 					<TextView android:layout_width="200dp"  android:layout_height="wrap_content"
+       	    	  			  android:text="@string/owner"  android:textSize="14dp"/>
+       				<EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+       				          android:singleLine="true"
+				 			  android:textSize="12dp"  android:id="@+id/edt_owner"/>   			 
+    		 </LinearLayout>
+ 			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+ 					<TextView android:layout_width="200dp"  android:layout_height="wrap_content"
+        	      			  android:text="@string/baurate"  android:textSize="14dp"/>
+        			<EditText  android:layout_width="fill_parent"  android:layout_height="wrap_content"
+        	      			   android:textSize="12dp" android:singleLine="true"
+        	      			   android:inputType="number" android:id="@+id/edt_baurate" />		 
+    		</LinearLayout>
+    		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+       				<TextView android:layout_width="200dp"  android:layout_height="wrap_content"
+       	    	 			  android:text="@string/timeout"  android:textSize="14dp"/>
+       				<EditText android:layout_width="fill_parent"  android:layout_height="wrap_content"
+       	    	  			  android:inputType="number" android:singleLine="true"
+       	    	  			  android:textSize="12dp"  android:id="@+id/edt_timeout"/>
+    		 </LinearLayout>
+ 			<!-- <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+					<TextView  android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	      			   android:text="@string/shipment_date"/>
+        			<EditText  android:layout_width="220dp" android:layout_height="wrap_content"
+        	      		       android:layout_alignParentRight="true" android:textSize="12dp"  
+        	      		       android:id="@+id/edt_shipment_date"/>
+    		 </RelativeLayout>
+    		 -->
+    		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+					<TextView  android:layout_width="200dp"  android:layout_height="wrap_content"
+        	      			   android:text="@string/datasbit"  android:textSize="14dp"/>
+        			<EditText  android:layout_width="fill_parent"  android:layout_height="wrap_content"
+        	      		       android:textSize="12dp"  android:singleLine="true"
+        	      		       android:inputType="number"  android:id="@+id/edt_databit"/>
+    		 </LinearLayout>
+ 			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+       			<TextView android:layout_width="200dp"  android:layout_height="wrap_content"
+       	    	  		  android:text="@string/endbit"  android:textSize="14dp"/>
+       			<EditText android:layout_width="fill_parent"  android:layout_height="wrap_content"
+       	    	  		  android:textSize="12dp" android:singleLine="true"
+       	    	  		  android:inputType="number"  android:id="@+id/edt_endbit"/>				
+    		</LinearLayout>
+    		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+       			<TextView android:layout_width="200dp"  android:layout_height="wrap_content"
+       	    	  		  android:text="@string/prioritybit"  android:textSize="14dp"/>
+       			<EditText  android:layout_width="fill_parent"  android:layout_height="wrap_content"
+       	    	  		   android:textSize="12dp" android:singleLine="true"
+       	    	  		   android:inputType="number"  android:id="@+id/edt_priorityBit"/>				
+    		</LinearLayout>
+    		<LinearLayout android:layout_width="fill_parent"  android:layout_height="wrap_content"
+    		     			android:orientation="horizontal"  android:layout_marginBottom="10px">
+       			<TextView android:layout_width="200dp"  android:layout_height="wrap_content"
+       	    	  		  android:text="@string/flowControl"  android:textSize="14dp"/>
+       			<EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+       	    	  		  android:textSize="12dp" android:singleLine="true"
+       	    	  		  android:inputType="number" android:id="@+id/edt_flowControl"/>				
+    		</LinearLayout>
+    		
+    		
+
+
+       	 	<include layout="@layout/common_btngroup_setting" android:id="@+id/btnGroups" />
+    </LinearLayout>         
+    </ScrollView>
+   
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="fill_parent" android:layout_height="fill_parent"
+    		  android:orientation="vertical" android:background="@color/thin_back">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		  	  android:orientation="vertical" style="@style/style_2">
+    	<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" >
+        	<TextView android:layout_width="70dp" android:layout_height="wrap_content"
+        	    	  android:text="@string/work_order" android:id="@+id/lab_workorder"
+        	    	  android:textSize="14dp"/>
+        	<Spinner android:layout_width="fill_parent" android:layout_height="wrap_content"
+        	    	  android:layout_toRightOf="@id/lab_workorder" android:layout_marginLeft="8dp" 
+        	    	  android:id="@+id/spin_workorder"/>
+        	<!-- 
+        	<Button android:layout_width="wrap_content"    android:layout_height="wrap_content"
+        	    	  android:layout_toRightOf="@id/spin_workorder" android:text="@string/refresh" 
+        	    	  android:id="@+id/btn_refresh"/>
+        	 -->
+    	</RelativeLayout>
+    	<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+    	                android:layout_marginTop="5dp">
+        	<TextView android:layout_width="70dp" android:layout_height="wrap_content"
+        	    	  android:text="@string/product_line"  android:textSize="14dp"
+        	    	  android:id="@+id/lab_productline"/>
+        	<EditText android:layout_width="65dp" android:layout_height="wrap_content"
+        	    	  android:layout_toRightOf="@id/lab_productline" android:textSize="12dp"
+        	    	  android:singleLine="true"
+        	    	  android:layout_marginLeft="8dp" android:id="@+id/edt_productline"/>
+        	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	          android:layout_marginLeft="3dp" android:text="@string/machine"   
+        	    	  android:layout_toRightOf="@id/edt_productline" android:textSize="14dp"
+         	    	   android:singleLine="true" android:id="@+id/lab_machine"/>
+        	<EditText android:layout_width="65dp" android:layout_height="wrap_content"
+        	          android:layout_marginLeft="3dp" android:singleLine="true"
+        	    	  android:layout_toRightOf="@id/lab_machine" 
+        	    	  android:textSize="12dp"  android:id="@+id/edt_machine" />
+        	<Button  android:layout_width="wrap_content"    android:layout_height="wrap_content"
+        	    	 android:layout_toRightOf="@id/edt_machine" android:layout_marginLeft="8dp" 
+        	    	 android:text="@string/cancel" 
+        	    	 android:textSize="14dp"  android:id="@+id/btn_cancel_stalotsn" />
+    	</RelativeLayout>
+    	<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+    	                android:layout_marginTop="5dp">
+        	<TextView android:layout_width="70dp" android:layout_height="wrap_content"
+        	    	  android:text="@string/meterial_batnum" android:textSize="14dp" 
+        	    	  android:layout_marginLeft="8dp" android:id="@+id/lab_operatescan"/>
+        	<EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+        	    	  android:layout_toRightOf="@id/lab_operatescan" android:textSize="12dp" 
+        	    	  android:singleLine="true" android:id="@+id/edt_operatescan">
+        	</EditText>
+    	</RelativeLayout>  
+    	<include layout="@layout/common_btngroup_1" android:id="@+id/btnGroups" />      
+    </LinearLayout>
+    <include layout="@layout/common_edt_operatedetails" android:id="@+id/common_edtView_operateDetails"/>
+</LinearLayout>

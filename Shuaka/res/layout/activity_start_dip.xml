@@ -1,0 +1,289 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightskyblue"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StartDip" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="504dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="222dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:gravity="left"
+                    android:text="工单名称"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/Text_SNType"
+                    android:layout_width="167dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:gravity="left"
+                    android:text="SN类型"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/darkgreen" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp" >
+
+                <Spinner
+                    android:id="@+id/Spin_DIPMOID"
+                    android:layout_width="240dp"
+                    android:layout_height="50dp" />
+
+                <Spinner
+                    android:id="@+id/Spin_SNType"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear_lab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/TextView07"
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:gravity="left"
+                    android:text="总长度"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/TextView08"
+                    android:layout_width="118dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="0.15"
+                    android:gravity="left"
+                    android:text="启动类型"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="25dp"
+                    android:layout_weight="0.44"
+                    android:gravity="left"
+                    android:text="前缀关键字"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/Linear_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp" >
+
+                <Spinner
+                    android:id="@+id/spin_SNLength"
+                    android:layout_width="117dp"
+                    android:layout_height="49dp" />
+
+                <Spinner
+                    android:id="@+id/spin_StartType"
+                    android:layout_width="164dp"
+                    android:layout_height="49dp" />
+
+                <EditText
+                    android:id="@+id/Edit_SNKeyWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:autoText="false"
+                    android:contentDescription="@color/green"
+                    android:ems="10"
+                    android:hint="为空不卡前缀"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp" >
+
+                <TextView
+                    android:id="@+id/TextView05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.95"
+                    android:gravity="left"
+                    android:text="产品料号"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/lab_StartDIPOut"
+                    android:layout_width="133dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    android:gravity="left"
+                    android:text=" 已扫描数量"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp" >
+
+                <EditText
+                    android:id="@+id/Edit_DIPProductID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_weight="0.45"
+                    android:autoText="false"
+                    android:contentDescription="@color/green"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/Edit_ScannedQuantity"
+                    android:layout_width="144dp"
+                    android:layout_height="49dp"
+                    android:autoText="false"
+                    android:contentDescription="@color/green"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/lab_StartDIPOut"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="产品描述"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/green" />
+
+            <EditText
+                android:id="@+id/Edit_ProductDescrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:autoText="false"
+                android:contentDescription="@color/green"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="233dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:text="工作流名称"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/green" />
+
+            <EditText
+                android:id="@+id/Edit_WorkFlow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="25dp"
+                android:autoText="false"
+                android:contentDescription="@color/green"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="94dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:gravity="left"
+                    android:text="启动批号"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/green" />
+
+                <EditText
+                    android:id="@+id/Edit_DIPStartSN"
+                    android:layout_width="303dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="25dp"
+                    android:autoText="false"
+                    android:contentDescription="@color/green"
+                    android:ems="10"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/linearLayout1"
+        layout="@layout/common_edt_sysinfo" />
+
+</RelativeLayout>

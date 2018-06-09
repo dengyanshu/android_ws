@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="wrap_content"  android:layout_height="wrap_content"
+    		  android:orientation="vertical"  android:paddingTop="12dp"
+    		  android:paddingBottom="8dp"  android:paddingLeft="10dp"
+    		  android:paddingRight="10dp"  android:background="@color/thin_back">
+    <LinearLayout   android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:orientation="horizontal"  android:layout_marginTop="5dp">
+        <TextView   style="@style/check_deliNum_style1" android:text="@string/check_str"/>
+        <EditText   style="@style/check_deliNum_style2" android:singleLine="true"
+            		android:id="@+id/edt_checkStr"/>
+    </LinearLayout>
+   
+    <LinearLayout   android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:orientation="horizontal"  android:layout_marginTop="5dp"
+                    android:layout_gravity="center">
+        <Button  android:layout_height="wrap_content" android:layout_width="wrap_content"
+                 android:text="@string/check" android:id="@+id/btn_Check"/>
+        <Button  android:layout_height="wrap_content" android:layout_width="wrap_content"
+                   android:layout_marginLeft="8dp"
+                 android:text="@string/abolish"	android:id="@+id/btn_abolish"/>
+    </LinearLayout>
+</LinearLayout>        

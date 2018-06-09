@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightskyblue"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BoxLotSNCheckActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="504dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo3" />
+
+            <TextView
+                android:id="@+id/Text111233167"
+                android:layout_width="392dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="120dp"
+                android:gravity="left"
+                android:text="箱号"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/green" />
+
+            <EditText
+                android:id="@+id/Edit_TjBoxLotSNCheckBoxNumber"
+                android:layout_width="393dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:autoText="false"
+                android:contentDescription="@color/green"
+                android:ems="10"
+                android:hint="请扫描箱号"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/Texsdf13dje2"
+                android:layout_width="392dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="80dp"
+                android:gravity="left"
+                android:text="产品批号"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/green" />
+
+            <EditText
+                android:id="@+id/Edit_TjBoxLotSNCheckSN"
+                android:layout_width="393dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:autoText="false"
+                android:contentDescription="@color/green"
+                android:ems="10"
+                android:hint="请扫描箱号中产品批号"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/butt_TjBoxLotSNCheckClear"
+                android:layout_width="102dp"
+                android:layout_height="wrap_content"
+                 
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:text="清空箱号"
+                android:textColor="@color/blue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/linearLayout1"
+        layout="@layout/common_edt_sysinfo" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

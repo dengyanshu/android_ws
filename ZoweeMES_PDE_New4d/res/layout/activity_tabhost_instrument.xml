@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/lightblue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+        
+        <RadioGroup 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal"
+             android:id="@+id/tabhost_instrument_radiogroup"
+             android:background="@color/white"
+            >
+            
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" 
+                android:text="线体架设"
+                android:textSize="10sp"
+                  android:textColor="@color/black"
+                android:drawableTop="@drawable/searchsmall"
+                android:id="@+id/tabhost_instrument_radiobutton1"
+                 android:gravity="center_horizontal"
+                  android:button="@null"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                />
+
+              <RadioButton
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="设备解绑"
+                  android:textSize="10sp"
+                  android:textColor="@color/black"
+                   android:drawableTop="@drawable/searchsmall"
+                   android:id="@+id/tabhost_instrument_radiobutton2"
+                   android:gravity="center_horizontal"
+                   android:button="@null"
+                 android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                  
+                />
+              <RadioButton
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="工单投产"
+                  android:textSize="10sp"
+                  android:textColor="@color/black"
+                   android:drawableTop="@drawable/searchsmall"
+                   android:id="@+id/tabhost_instrument_radiobutton3"
+                   android:gravity="center_horizontal"
+                   android:button="@null"
+                 android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                  
+                />
+              <RadioButton
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="设备查询"
+                  android:textSize="10sp"
+                  android:textColor="@color/black"
+                   android:drawableTop="@drawable/searchsmall"
+                   android:id="@+id/tabhost_instrument_radiobutton4"
+                   android:gravity="center_horizontal"
+                   android:button="@null"
+                 android:paddingLeft="10dp"
+                  android:paddingRight="10dp"
+                  
+                />
+            
+         </RadioGroup>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

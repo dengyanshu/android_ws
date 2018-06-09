@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 android:gravity="center"
+                 style="@style/textsize4d"
+                 android:layout_width="75dp"
+                 android:layout_height="match_parent"
+                 android:text="物料:" />
+
+        <EditText
+            android:id="@+id/smtipqcmz_mz"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true"
+           />
+            
+        </LinearLayout>
+       
+    </LinearLayout>
+  
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content"        
+        
+        
+        >
+        <Button 
+            android:onClick="clickme"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24dp"
+            android:text="SMT IPQC 物料核对" 
+            android:textColor="@color/blue"
+            android:background="@drawable/button_bg"
+            android:layout_margin="5dp"/>
+     </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+           <EditText
+                android:id="@+id/smtipqcmz_editscan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:gravity="top"
+                android:textSize="15sp" 
+                android:focusable="false"/>
+        
+    </LinearLayout>
+    </LinearLayout>
+        
+     

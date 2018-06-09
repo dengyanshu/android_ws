@@ -1,0 +1,12 @@
+
+
+
+1、android 系统简介
+2、4.2  对应版本17
+3、底层架构：linux  c与c++  application framwork      application
+4、dvm虚拟机
+5、android 工程目录
+    bin 里面有 apk文件  class 打包成dex   res打包成资源  还有清单文件
+6、四种事件的写法
+7、android 常用布局
+8、android  单位 用dp  和sp  这个比html中px要好

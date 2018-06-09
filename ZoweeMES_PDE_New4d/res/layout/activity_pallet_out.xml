@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical"
+    android:showDividers="middle" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+
+            <EditText
+            android:id="@+id/palletout_lotsn2edit"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:background="@color/gray"
+           >
+           </EditText>
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" 
+             android:orientation="horizontal"
+             >
+
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:text="工单："
+                android:textColor="@color/red"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/palletout_moedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:hint="扫描栈板或中箱获取工单"
+                android:textSize="12dp" />
+               <requestFocus />
+             
+            
+         </LinearLayout>
+          <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" 
+             android:orientation="horizontal"
+             >
+
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:text="类型："
+                android:gravity="center_vertical"
+                android:textColor="@color/red"
+                android:textSize="14dp" />
+
+            <Spinner
+                android:id="@+id/palletout_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                android:entries="@array/Pallet_out"
+                />
+               <requestFocus />
+             
+            
+         </LinearLayout>
+
+           <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" 
+             android:orientation="horizontal"
+             >
+
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:text="条码："
+                android:textColor="@color/red"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/palletout_lotsnedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" />
+               <requestFocus />
+             
+            
+         </LinearLayout>
+          <LinearLayout 
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                    >
+
+                     <TextView
+                         android:layout_width="56dp"
+                         android:layout_height="match_parent"
+                         android:text="规则："
+                         android:gravity=""
+                         android:textAppearance="?android:attr/textAppearanceMedium"
+                         android:textColor="@color/red"
+                         android:textSize="14dp" />
+
+           <RadioGroup 
+                       android:layout_width="match_parent"
+                     android:layout_height="wrap_content" 
+                     android:orientation="horizontal" 
+                     android:id="@+id/shuaka_banci_radiogroup"                      
+                      >
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/shuaka_banci_radiobtn1"  
+                            android:text="按工单" />
+                        
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/shuaka_banci_radiobtn3"  
+                            android:text="按料号" />
+
+                    </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+    
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal" >
+         <Button 
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24dp"
+            android:text="栈板出货扫描程式" 
+            android:textColor="@color/blue"
+            android:background="@drawable/button_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:enabled="false"
+            />
+         
+      </LinearLayout>
+       
+
+         <TextView
+             android:id="@+id/palletout_tv"
+             android:layout_width="match_parent"
+             android:layout_height="34dp"
+             android:gravity="right"
+             android:text="已扫描"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+             android:textColor="@color/red"
+             android:background="@drawable/corners_bg"
+             android:textSize="24dp" />
+           
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+           <EditText
+                android:id="@+id/smtipqc_editscan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:editable="false"
+                android:focusable="false"
+                android:gravity="top"
+                android:textSize="15sp" 
+                />
+        
+    </LinearLayout>
+    
+
+    
+
+</LinearLayout>

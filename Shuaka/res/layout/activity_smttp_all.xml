@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context=".activity.CheckMoNamesActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@drawable/corners_bg_title">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            
+           
+            android:src="@drawable/logo3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_vertical|center_horizontal"
+            android:text="SMT--贴片(通用模式)"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+            android:textSize="60sp"
+            android:textStyle="normal|bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="@color/lightblue">
+
+        <LinearLayout
+            android:layout_width="595dp"
+            android:layout_height="537dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="0dp" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/corners_bg"
+                android:padding="5dp"
+                >
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:text="工单："
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" 
+                        android:gravity="left|center"
+                        android:id="@+id/smttp_common_mo_tv"
+                        />
+                        <EditText
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/smttp_common_mo_edit"
+                            android:focusable="false"
+                            android:enabled="false"
+                            />
+                        <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="产品："
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" 
+                        android:gravity="right|center"
+                        />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:focusable="false"
+                            android:enabled="false"
+                            android:id="@+id/smttp_common_moprod_edit"
+                            />
+                    </LinearLayout>
+                   
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:text="描述："
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" 
+                        android:gravity="left|center"
+                        />
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                             android:focusable="false"
+                            android:enabled="false"
+                            android:id="@+id/smttp_common_modescriptinon_edit"
+                            />
+                    </LinearLayout>
+
+                    
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:text="贴片模式："
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" 
+                        android:gravity="left|center"
+                        />
+                        <Spinner 
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/smttp_common_type_sp"
+                            android:entries="@array/smttptype"
+                            />
+                    </LinearLayout>
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                        android:layout_width="90dp"
+                        android:layout_height="50dp"
+                        android:text="独立模式："
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" 
+                        android:gravity="left|center"
+                        />
+                        <Spinner 
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/smttp_common_ispure_sp"
+                             android:entries="@array/smttpispure"
+                            />
+                    </LinearLayout>
+                    
+            </LinearLayout>
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corners_bg"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                >
+                 <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="A轨贴片面："
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/red" 
+                    android:gravity="center"
+                     
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:textSize="15sp"
+                    android:textStyle="bold" 
+                    android:id="@+id/smttp_common_raila_side_sp"
+                    android:entries="@array/smttprailselectside"
+                   
+                    />
+                   </LinearLayout>
+                   <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:text="B轨贴片面："
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/red" 
+                    />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:textSize="15sp"
+                    android:textStyle="bold" 
+                    android:id="@+id/smttp_common_railb_side_sp"
+                   android:entries="@array/smttprailselectside"
+                    />
+                   </LinearLayout>
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:layout_marginTop="20dp"
+                android:background="@drawable/corners_bg"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <Button
+                     android:id="@+id/smttp_common_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:text="-----------OK!确认以上信息,进入自动贴片模式-------------" 
+                    android:textColor="@color/red"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    >
+                </Button>
+            </LinearLayout>
+             <TextView
+                    android:background="@drawable/corners_bg"
+                    android:layout_marginLeft="10dp"
+                     android:layout_marginRight="10dp"
+                    android:id="@+id/textView1"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="说明：请先获取工单信息!\n1、选择贴片模式!\n2、选择独立模式否!\n3、选择轨道贴片面!\n4、点击OK进入自动模式!"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corners_bg"
+            >
+
+            <EditText
+                android:id="@+id/smttp_common_editscan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1.31"
+                android:ems="10"
+                android:gravity="top"
+                android:enabled="false"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

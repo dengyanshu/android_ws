@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical"
+    android:showDividers="middle" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="30dp"
+                android:text="设备编号："
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="left"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/instrument_linesetup_sn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                >
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="30dp"
+                android:text="工作中心："
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="left"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/instrument_linesetup_workcenter"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                android:enabled="false"
+                >
+            </EditText>
+        </LinearLayout>
+        
+
+        
+    </LinearLayout>
+    
+     
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+           <EditText
+                android:id="@+id/instrument_linesetup_editscan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:gravity="top"
+                android:textSize="12sp" 
+                android:focusable="false"/>
+        
+    </LinearLayout>
+    
+
+    
+
+</LinearLayout>

@@ -1,0 +1,130 @@
+1、进程(类似于电脑的进程)
+     一个应用对应一个进程 然后开启线程
+    系统会尽可能长时间维护进程 除非内存不够时
+    进程之间会有优先级上：
+    1、前台进程 
+    2、可视不响应进程（onpause()）   
+    3、startservice 服务进程(播放音乐 网络下载等) 
+    4、不可视（onstop()） 
+    5、空进程
+          比如开启界面去后台取数据  当界面被stop后   此进程很可能被回收 而sevice的优先级比较高不会被回收
+    
+ 2、service
+          继承自service类   
+    oncreat（）方法  onstartcommond()
+    service  被调用startservice() 必须 人工停止 stopService()会调用onDestory()方法
+    
+    
+ 3、案例电话监听器
+             开启服务 ---服务创建oncreat()里面   通过系统服务 获取电话管理器 监听电话状态 调用 mediarecord 来录音
+       /*
+	 * 第一次实例的时候调用
+	 * */
+	@Override
+	public void onCreate() {
+		// TODO Auto-generated method stub
+		super.onCreate();
+		
+		
+		
+		
+	    tm = (TelephonyManager) getSystemService(TELEPHONY_SERVICE);
+	    tm.listen(new PhoneStateListener(){
+	    	  @Override
+	    	public void onCallStateChanged(int state, String incomingNumber) {
+	    		// TODO Auto-generated method stub
+	    		super.onCallStateChanged(state, incomingNumber);
+	    		switch (state) {
+				case TelephonyManager.CALL_STATE_IDLE:
+					//空闲状态
+					if(recorder!=null){
+						 recorder.stop();
+						 recorder.reset();   
+						 // You can reuse the object by going back to setAudioSource() step
+						 recorder.release(); // Now the object cannot be reused
+					}
+					break;
+				case TelephonyManager.CALL_STATE_OFFHOOK:
+					//接通状态
+					
+					 recorder.start(); 				
+					break;
+				case TelephonyManager.CALL_STATE_RINGING:
+					//响铃状态
+					System.out.println("call coming...");
+					 recorder = new MediaRecorder();
+					 recorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+					 //虚拟机只能用mic模拟
+					 recorder.setOutputFormat(MediaRecorder.OutputFormat.THREE_GPP);
+					 recorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+					 try {
+						recorder.setOutputFile("/mnt/sdcard/call.3gp");
+					} catch (IllegalStateException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} 
+					 try {
+							recorder.prepare();
+						} catch (IllegalStateException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						} catch (IOException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					break;
+
+				
+				}
+	    	}
+	    },PhoneStateListener.LISTEN_CALL_STATE);
+		
+	}
+    -------------------------------------------------------------------------------------------         
+             
+             
+     
+     
+  4、2种服务开启方式：
+            服务业务类实例化第一次创建都调用oncreat()方法
+     startService每点击一次都调用一次onStartCommond
+     bindService(intent,ServiceConnection,flag) 其中serviceConnection是一个interface 
+             需要实现 一个绑定的方法和解绑的方法  
+      a、不能解绑2次服务（人工按钮解绑2次会报停止）
+                          一般写法是在activity的onDestroy中unbindService(coon) 不然会报红字提示
+                        人工解绑一次  多次回退 activity销毁会自动调用unbindService  有同死的特性s               
+      b、bindservice 如果activity销毁 服务会自动销毁  而且开启了后台看不到进程
+     
+ 5、办证案例：
+        演示BindService 的特性  通过服务连接时候返回的 onBind()方法返回的binder对象 调用内部方法  
+      
+   a、service内部有私有2个方法 banZheng()和sangna()  
+               还有1个private class MyBinder extends  Binder  implements BanzhengInterface
+   b、通过一个接口暴露出callbanzheng()方法
+   c、service  onBind()返回一个myBinder实例 
+   d、bindService的activity中 用服务连接 接收onBind()返回的binder实例
+          （实际是接口类型 extends Binder 只是标识作用）  调用callbanzheng()方法
+       
+       
+  6、音乐播放demo
+    2种服务混合开启  startService --bindService（为了获取继承自binder的接口实例 调用服务提供的方法）
+    ---activity（销毁的方法调用unbindService而服务还在后台运行）---想停止运行（必须调用stopService）
+    
+  7、进程间通信 aidl,alipay案例
+             远程端写法
+     a、service 必须配置intent-filter
+             按原始的写法 写好alipay的服务 在清单文件配置service  必须配置意图过滤器 因为client无法调用bindService
+       的时候 传new Intent(this,Clazz.class) 必须使用意图过滤器来获取意图
+      b、将IAlipayServiceBinder的java后缀改成aidl   安卓系统会自动生成一些文件
+      c、service内部MyBinder 继承自Stub  不用像以前一样 继承自Binder并实现IAlipayServiceBinder
+            客户端写法：
+      a、将远程的aidl连同包一起拷贝到本地中
+      b、bindServie 
+                        传入intent  设置和远程端一样的action 
+                         传入连接对象   连接对象里面获取IAlipayServiceBinder 实例   直接使用Stub的静态方法获取服务实例
+      c、在onCreate()方法中bindService 在onDestroy中解绑实例
+     
+     
+   
+         
+     

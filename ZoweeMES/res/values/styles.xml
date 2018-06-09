@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+	<style name="full_screen">
+		<item name="android:windowNoTitle">true</item> <!-- 屏幕没有标题 -->
+	 <!--	<item name="android:windowFullscreen">?android:windowNoTitle</item>  屏幕全屏 -->
+	</style>
+	<style name="main_btn_style">
+		<item name="android:button">@null</item>
+		<item name="android:textSize">16dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_margin">0dp</item>
+		<item name="android:paddingTop">5dp</item>
+		<item name="android:paddingBottom">3dp</item>
+		<item name="android:layout_weight">1.0</item>
+	    <item name="android:background">@drawable/btn_tab_bg</item>
+	</style>
+	<style name="rg_main_btn_style">
+		<item name="android:button">@null</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_margin">0dp</item>
+		<item name="android:paddingTop">5dp</item>
+		<item name="android:paddingBottom">3dp</item>
+		<item name="android:layout_weight">1.0</item>
+	    <item name="android:background">@drawable/btn_tab_bg</item>
+	</style>
+	<style name="style_1">
+	    <item name="android:paddingLeft">20dp</item>
+	    <item name="android:paddingRight">40dp</item>
+	    <item name="android:paddingTop">5dp</item>
+	</style>
+	<style name="style_2">
+	    <item name="android:paddingLeft">8dp</item>
+	    <item name="android:paddingRight">40dp</item>
+	    <item name="android:paddingTop">3dp</item>
+	</style>
+	<style name="style_3">
+	    <item name="android:paddingLeft">5dp</item>
+	    <item name="android:paddingRight">8dp</item>
+	    <item name="android:paddingTop">5dp</item>
+	    <item name="android:paddingBottom">5dp</item>
+	</style>
+	<style name="style_4">
+	    <item name="android:paddingLeft">3dp</item>
+	    <item name="android:paddingTop">3dp</item>
+	    <item name="android:background">@color/lightgray</item>
+	</style>
+	<style name="lab_plusreduce_style">
+		<item name="android:button">@null</item>
+		<item name="android:textSize">22dp</item>
+		<item name="android:gravity">center</item>
+	    <item name="android:background">@drawable/lab_plusreduce_bg</item>
+	    <item name="android:layout_marginLeft">35dp</item>
+	    <item name="android:textStyle">bold</item>
+	    <item name="android:textColor">@color/red</item>
+	</style>
+	<style name="edt_operateDetails">
+		<item name="android:background">@color/black</item>
+		<item name="android:textSize">12dp</item>
+	    <item name="android:textColor">@color/red</item>
+	    <item name="android:editable">false</item>
+	    <item name="android:minLines">500</item>
+	    <item name="android:paddingLeft">1dp</item> 
+	</style>
+	<style name="edt_scaninfo">
+		<item name="android:background">@color/white</item>
+		<item name="android:textSize">12dp</item>
+	    <item name="android:textColor">@color/red</item>
+	    <item name="android:editable">false</item>
+	    <item name="android:minLines">500</item>
+	    <item name="android:paddingLeft">1dp</item>
+     </style>
+	<style name="btn_comBtnGroup">
+		<!--  <item name="android:paddingLeft">10px</item>
+		      <item name="android:paddingRight">10px</item>-->
+		<item name="android:textSize">14dp </item>
+		<item name="android:layout_marginLeft">8dp</item>
+	</style>
+	<style name="common_dialog" parent="@android:style/Theme.Dialog">
+		<item name="android:windowFrame">@null</item><!-- 有无window框 -->
+		<item name="android:windowIsFloating">true</item><!-- 是否浮在activity之上 -->
+		<item name="android:windowNoTitle">true</item> <!-- 是否无标题 -->
+		<item name="android:windowIsTranslucent">false</item><!-- 是否透明 -->
+		<item name="android:backgroundDimEnabled">false</item><!--背景是否模糊  -->
+	</style>
+	<style name="dialog_update" parent="@style/common_dialog">
+		<item name="android:windowIsTranslucent">false</item><!-- 是否透明 -->
+	</style>	
+	<style name="dialog_about" parent="@style/common_dialog">
+		
+	</style>
+	<style name="dialog_checkMonames" parent="@style/common_dialog">
+		
+	</style>	
+	<style name="style_5">
+	    <item name="android:paddingLeft">10px</item>
+	    <item name="android:paddingTop">10px</item>
+	     <item name="android:paddingRight">15px</item>
+	</style>
+	<style name="chemat_statab_dialog" parent="common_dialog">
+	</style> 
+	<style name="check_monames_style1">
+	     <item name="android:layout_width">80dp</item>
+	    <item name="android:textSize">14dp</item>
+	</style> 
+	<style name="check_monames_style2">
+	    <item name="android:layout_width">200dp</item>
+	    <item name="android:textSize">12dp</item>
+	    <item name="android:layout_marginLeft">5dp</item>
+	</style>  
+	<style name="check_completenos_dialog" parent="common_dialog">
+	</style>
+	<style name="check_completenos_style1">
+	    <item name="android:layout_height">wrap_content</item>
+	     <item name="android:layout_width">80dp</item>
+	    <item name="android:textSize">14dp</item>
+	</style> 
+	<style name="check_completenos_style2">
+	     <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_width">200dp</item>
+	    <item name="android:textSize">12dp</item>
+	    <item name="android:layout_marginLeft">5dp</item>
+	</style>     
+	<style name="check_deliNum_dialog" parent="common_dialog">
+	</style>
+	<style name="check_deliNum_style1">
+	    <item name="android:layout_height">wrap_content</item>
+	     <item name="android:layout_width">80dp</item>
+	    <item name="android:textSize">14dp</item>
+	</style> 
+	<style name="check_deliNum_style2">
+	     <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_width">200dp</item>
+	    <item name="android:textSize">12dp</item>
+	    <item name="android:layout_marginLeft">5dp</item>
+	</style>    
+	
+	
+	<style name="MyDialog" parent="@android:Theme.Dialog">
+  <item name="android:windowFrame">@null</item>
+  <item name="android:windowNoTitle">true</item>
+  <item name="android:windowBackground">@drawable/dialog_bg4d</item>
+  <item name="android:windowIsFloating">true</item>
+  <item name="android:windowContentOverlay">@null</item>
+</style>
+
+	
+	
+
+    <style name="versiondialog" parent="@android:Theme.Dialog">
+      <item name="android:windowNoTitle">true</item>
+      <item name="android:windowFrame">@null</item>
+      <item name="android:windowIsTranslucent">true</item>
+ <!-- 是否透明 -->
+      <item name="android:windowIsFloating">true</item>
+ <!-- 是否浮在activity之上 -->
+      <item name="android:background">@color/transparent</item>
+      <item name="android:backgroundDimEnabled">false</item>
+      <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>  
+     </style>  
+     
+     
+    <style name="renliDialog" parent="@android:Theme.Dialog">
+      <item name="android:windowNoTitle">true</item>
+      <item name="android:windowFrame">@null</item>
+      <item name="android:windowIsFloating">true</item>
+      <item name="android:backgroundDimEnabled">false</item>
+     <!--<item name="android:windowBackground">@drawable/selector_dialog_bg</item> 
+      <item name="android:windowIsTranslucent">false</item>
+       --> 
+      <item name="android:windowIsTranslucent">true</item>
+      <item name="android:windowBackground">@color/transparent</item>
+     </style>  
+       
+    
+    <style name="renliAnimations"  parent="android:Animation" mce_bogus="1">
+        <item name="android:windowEnterAnimation">@anim/dialog_enter_anim</item>  
+        <item name="android:windowExitAnimation">@anim/dialog_exit_anim</item>  
+     
+        
+     </style>  
+    
+    
+  
+	    
+       
+
+    
+
+	
+</resources>

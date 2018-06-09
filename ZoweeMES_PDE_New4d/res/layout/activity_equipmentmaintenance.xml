@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="设备序列号"
+            android:textSize="14dp" />
+
+        <EditText
+            android:id="@+id/equipmentmaintenance_snedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="设备维护历史情况："
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:textSize="24dp" 
+            android:textStyle="italic|bold"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="维护周期(天) "
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/equipmentmaintenance_periodedit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                android:enabled="false"
+                >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:text="上次维护日期"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/equipmentmaintenance_lastmaintenancedatedit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:enabled="false"
+                android:singleLine="true"
+                android:textSize="12dp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:text="下次维护日期"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/equipmentmaintenance_nextmaintenancedatedit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                android:enabled="false">
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+     <Button 
+         android:id="@+id/equipmentmaintenance_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24dp"
+            android:text="维护完成，点击提交!" 
+            android:textColor="@color/blue"
+            android:background="@drawable/button_bg"
+            android:layout_margin="10dp"
+            />
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+       
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="12dp"
+            android:text="维护结果：" 
+            android:textColor="@color/blue"
+            android:id="@+id/equipmentmaintenance_tv"
+            />
+    </LinearLayout>
+    
+
+    
+
+</LinearLayout>

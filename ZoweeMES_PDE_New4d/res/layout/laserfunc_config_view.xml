@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="fill_parent" android:layout_height="fill_parent"
+    		  android:orientation="vertical" android:background="@color/thin_back">
+     <TextView  android:layout_width="wrap_content"  android:layout_height="wrap_content"
+                android:layout_gravity="center"  android:layout_marginTop="15px"  
+                android:text="@string/laser_Config"  android:textSize="18dp"/>
+     <LinearLayout  android:layout_width="fill_parent"  android:layout_height="wrap_content"
+                    style="@style/style_5"  android:orientation="vertical">
+	     <LinearLayout  android:layout_width="fill_parent" android:layout_height="wrap_content"
+	    		  	  	android:orientation="horizontal"  android:layout_marginTop="20px" android:layout_marginBottom="20px">
+	    		<TextView  android:layout_width="50dp"  android:layout_height="wrap_content"
+	                    	 android:text="@string/laser" android:textSize="16dp"/>
+	    		<RadioGroup  android:layout_width="fill_parent"  android:layout_height="wrap_content"
+	    		             android:orientation="horizontal"
+	    		             android:gravity="center"  android:id="@+id/rg_laserFuncConfig">
+	    			<RadioButton  android:layout_width="wrap_content"  android:layout_height="wrap_content" 
+	    			              android:text="@string/laser_on"  android:textSize="14dp"  
+	    			              android:id="@+id/rb_laseron" />
+	    		    <RadioButton  android:layout_width="wrap_content"  android:layout_height="wrap_content"
+	    		                  android:layout_marginLeft="40px"   android:textSize="14dp"
+	    			              android:text="@string/laser_off"  android:id="@+id/rb_laseroff" />
+	    		</RadioGroup>
+	     </LinearLayout>         
+  	</LinearLayout>
+    <include  layout="@layout/common_btngroup_setting"  android:id="@+id/btnGroups" />
+</LinearLayout>

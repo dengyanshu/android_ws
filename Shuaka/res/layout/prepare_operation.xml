@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/style_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/work_order"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_workorder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+              android:layout_marginTop="5dp"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="领料单号"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_materialOrdernum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/storage_locaction"
+                android:textSize="14dp" />
+
+              <EditText
+                android:id="@+id/edt_storage_locaction"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" />
+          
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/material_barcoade"
+                android:textSize="14dp" />
+
+              <EditText
+                android:id="@+id/edt_material_barcode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" />
+        
+        </LinearLayout>
+
+        <include
+            android:id="@+id/btnGroups"
+            layout="@layout/common_btngroup_1" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/common_edtView_operateDetails"
+        android:layout_height="398dp"
+        layout="@layout/common_edt_operatedetails" />
+
+</LinearLayout>

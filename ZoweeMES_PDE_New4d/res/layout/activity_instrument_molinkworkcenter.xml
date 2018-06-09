@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical"
+    android:showDividers="middle" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="109dp"
+                android:layout_height="30dp"
+                android:text="工作中心："
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="left"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/instrument_molinkworkcenter_workcenter"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                android:enabled="false"
+                android:focusable="false"
+                >
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:text="工单："
+                android:textColor="@color/red"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:gravity="left"
+                android:textSize="16dp" />
+            
+            <Spinner 
+                android:id="@+id/instrument_molinkworkcenter_mospinner"
+                android:layout_width="fill_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                />
+
+            
+           
+        </LinearLayout>
+        <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="获取工单："
+            android:textSize="14dp" 
+            android:textColor="@color/red"
+            android:layout_marginLeft="15dp"/>
+
+         <EditText
+                android:id="@+id/instrument_molinkworkcenter_moedit"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                android:hint="输入工单包含字符，进行工单筛选"
+                />
+             
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="描述："
+            android:textSize="14dp" 
+            android:textColor="@color/red"
+            android:layout_marginLeft="15dp"/>
+
+            <EditText
+                android:id="@+id/instrument_molinkworkcenter_modecri"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:enabled="false"
+                android:focusable="false"
+                android:singleLine="true"
+                android:textSize="14dp" />
+             
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:text="料号："
+            android:textSize="14dp" 
+            android:textColor="@color/red"
+            android:layout_marginLeft="15dp"/>
+
+            <EditText
+                android:id="@+id/instrument_molinkworkcenter_moproductname"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="8dp"
+                android:enabled="false"
+                android:focusable="false"
+                android:singleLine="true"
+                android:textSize="14dp" />
+             
+         </LinearLayout>
+          <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" 
+             android:padding="5dp">
+        
+           <Button 
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:id="@+id/instrument_molinkworkcenter_okbutton"
+            android:drawableLeft="@drawable/buttonok"
+            android:drawablePadding="0dp"
+            android:text="工单绑定工作中心"
+            android:background="@color/gold"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            />
+              <Button 
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:id="@+id/instrument_molinkworkcenter_cancelbutton"
+            android:drawableLeft="@drawable/buttonok"
+            android:drawablePadding="0dp"
+            android:text="工单解绑工作中心"
+            android:background="@color/gold"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center"
+            />
+         </LinearLayout>
+
+        
+    </LinearLayout>
+    
+     
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+           <EditText
+                android:id="@+id/instrument_molinkworkcenter_editscan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:gravity="top"
+                android:textSize="12sp" 
+                android:focusable="false"/>
+        
+    </LinearLayout>
+    
+
+    
+
+</LinearLayout>

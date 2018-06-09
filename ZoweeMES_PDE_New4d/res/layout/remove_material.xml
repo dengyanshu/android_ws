@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="fill_parent" android:layout_height="fill_parent"
+    		  android:orientation="vertical"  android:background="@color/thin_back">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		  	  android:orientation="vertical" style="@style/style_2"
+    		  	  >
+        	<TextView android:layout_width="200dp" android:layout_height="wrap_content"
+        	    	  android:text="@string/remove_materi_clue" android:textSize="14dp"/>
+
+        	<EditText
+        	    android:id="@+id/edt_slot_barcode"
+        	    android:layout_width="fill_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_marginTop="3dp"
+        	    android:singleLine="true"
+        	    android:textSize="15dp" />
+
+        	 <include layout="@layout/common_btngroup_1"  android:id="@+id/btnGroups" />      
+    </LinearLayout>
+   
+    <include
+        android:id="@+id/common_edtView_operateDetails"
+        android:layout_width="match_parent"
+        layout="@layout/common_edt_operatedetails" />
+
+</LinearLayout>

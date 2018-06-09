@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="fill_parent" android:layout_height="fill_parent"
+    		  android:orientation="vertical" android:background="@color/thin_back">
+     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	   android:text="@string/finish_delivery_catton"  android:textSize="16dp"/>
+     <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+         
+         <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		  	  android:orientation="vertical"  style="@style/style_2">
+    		 <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+    		     <TextView android:layout_width="80dp" android:layout_height="wrap_content"
+        	    	       android:text="@string/shipment_num" android:textSize="14dp"/>
+       			 <Spinner android:layout_width="fill_parent" android:layout_height="wrap_content"
+       			          android:id="@+id/spin_shipment_num"/>
+    		 </LinearLayout>
+        
+    		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+ 					<TextView android:layout_width="80dp" android:layout_height="wrap_content"
+       	    	  			  android:text="@string/order_name" android:textSize="14dp"/>
+       				<Spinner android:layout_width="fill_parent" android:layout_height="wrap_content"
+				 			 android:id="@+id/spin_ordername"/>   			 
+    		 </LinearLayout>
+ 			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+ 					<TextView android:layout_width="80dp" android:layout_height="wrap_content"
+        	      			  android:text="@string/custom_name" android:textSize="14dp"/>
+        			<EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+        	      			  android:textSize="12dp" android:singleLine="true"
+        	      			  android:id="@+id/edt_custom_name"/>		 
+    		</LinearLayout>
+    		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+       				<TextView android:layout_width="80dp" android:layout_height="wrap_content"
+       	    	 			  android:text="@string/custom_fullname" android:textSize="14dp"/>
+       				<EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+       	    	  			  android:singleLine="true"
+       	    	  			  android:textSize="12dp" 
+       	    	  			  android:id="@+id/edt_custom_fullname"/>
+    		 </LinearLayout>
+ 			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     		  android:orientation="horizontal">
+					<TextView  android:layout_width="80dp" android:layout_height="wrap_content"
+        	      			   android:text="@string/shipment_date" android:textSize="14dp"/>
+        			<EditText  android:layout_width="fill_parent" android:layout_height="wrap_content"
+        	      		       android:textSize="12dp" android:singleLine="true"  
+        	      		       android:id="@+id/edt_shipment_date"/>
+    		 </LinearLayout>
+    		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+       				<TextView 	android:layout_width="80dp" android:layout_height="wrap_content"
+       	    	  				android:text="@string/pier" android:textSize="14dp"/>
+       				<EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+       	    	  			  android:textSize="12dp" android:singleLine="true"
+       	    	  			  android:id="@+id/edt_pier"/>
+    		 </LinearLayout>
+ 			<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		     			android:orientation="horizontal">
+       			<TextView android:layout_width="80dp" android:layout_height="wrap_content"
+       	    	  		  android:text="@string/catton_num" android:textSize="14dp"/>
+       			<EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+       	    	  		  android:textSize="12dp" android:singleLine="true"
+       	    	  		  android:id="@+id/edt_cattonnum"/>				
+    		</LinearLayout>
+       	 	<include layout="@layout/common_btngroup_1" android:id="@+id/btnGroups" />
+    </LinearLayout>         
+    </ScrollView>
+   <include layout="@layout/common_edt_operatedetails" android:id="@+id/common_edtView_operateDetails"/>
+   
+</LinearLayout>

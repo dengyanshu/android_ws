@@ -1,0 +1,499 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightskyblue"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SMTFirstScan" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="545dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/logo3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp" >
+
+                                <TextView
+                                    android:id="@+id/Text_PCBT_QTY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.14"
+                    android:gravity="center"
+                    android:text="连板数量"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:visibility="gone"
+                    android:textColor="@color/red" />
+                         
+                                                <Spinner
+                    android:id="@+id/spinner_PCBT_QTY"
+                    android:layout_width="wrap_content"
+                    android:visibility="gone"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/Text_ProductSN"
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.14"
+                    android:gravity="center"
+                    android:text="扫描PCB条码获取工单"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/magenta" />
+
+                <EditText
+                    android:id="@+id/Edit_ProductSN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.11"
+                    android:autoText="false"
+                    android:contentDescription="@color/green"
+                    android:ems="10"
+                    android:hint="点击&quot;更换生产工单&quot;可重新获取工单"
+                    android:singleLine="true" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp" >
+
+                <TextView
+                    android:id="@+id/Text_WONumber"
+                    android:layout_width="219dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.14"
+                    android:gravity="center"
+                    android:text="当前生产工单"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/magenta" />
+
+                <TextView
+                    android:id="@+id/Text_proNumber"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.12"
+                    android:gravity="center"
+                    android:text="产品料号"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/magenta" />
+
+                <TextView
+                    android:id="@+id/textView_bit"
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="连板数量"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/magenta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp" >
+
+                <EditText
+                    android:id="@+id/Edit_WONumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:autoText="false"
+                    android:editable="false"
+                    android:focusable="false"
+                    android:contentDescription="@color/green"
+                    android:ems="10"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/Edit_ProductNumber"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9.25"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/Edit_OnePCBQuantity"
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="540dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp" >
+
+                <TextView
+                    android:id="@+id/Text_PCBtype"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="0.01"
+                    android:gravity="center"
+                    android:text="PCB类型"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/magenta" />
+
+                <TextView
+                    android:id="@+id/Text_PCBFactQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="true"
+                    android:gravity="center"
+                    android:text="实际连板数量"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/magenta" />
+                
+                 <TextView
+                     android:id="@+id/Text_SNLength"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="0.02"
+                     android:editable="true"
+                     android:gravity="center"
+                     android:text="条码长度"
+                     android:textAppearance="?android:attr/textAppearanceMedium"
+                     android:textColor="@color/green" />
+
+                <TextView
+                    android:id="@+id/Text_PCBOnePacketQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:editable="true"
+                    android:gravity="center"
+                    android:text="工单扫描数量"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/magenta" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_weight="0.03" >
+
+                <Spinner
+                    android:id="@+id/spinner_PCBType"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content" />
+
+                <Spinner
+                    android:id="@+id/spinner_PCBFactQuantity"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.10" />
+                <Spinner
+                    android:id="@+id/spinner_SNLength"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.10" />
+
+                <EditText
+                    android:id="@+id/Edit_WOFinishQuantity"
+                    android:layout_width="118dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.27"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusableInTouchMode="false"
+                    android:maxLength="20"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:layout_marginTop="24dp" >
+
+                <TextView
+                    android:id="@+id/TextView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:text="PCB数量"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/magenta" />
+
+                <TextView
+                    android:id="@+id/TextView08"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.04"
+                    android:gravity="center"
+                    android:text="A面数量"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/magenta" />
+
+                <TextView
+                    android:id="@+id/TextView07"
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.13"
+                    android:gravity="center"
+                    android:text="B面数量"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/magenta" />
+
+                <TextView
+                    android:id="@+id/lab_DIPStartDip"
+                    android:layout_width="93dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.15"
+                    android:gravity="center"
+                    android:text="连板序号"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/magenta" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp" >
+
+                <EditText
+                    android:id="@+id/Edit_PCBOnePacketRemainQuantity"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.03"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/Edit_WOSideAQuantity"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.06"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+
+                <EditText
+                    android:id="@+id/Edit_WOSideBQuantity"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.08"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/Edit_CurrentPCBSerialnumber"
+                    android:layout_width="117dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.06"
+                    android:editable="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:inputType="number"
+                    android:maxLength="20"
+                    android:singleLine="true" />
+            </LinearLayout>
+            
+            <RelativeLayout 
+                  android:layout_width="match_parent"
+                   android:layout_height="70dp"
+                
+                
+                
+                >
+
+                <Button
+                    android:id="@+id/smtfirst_scan_tinobutton"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                     android:textColor="@color/blue" 
+                    android:text="更换锡膏" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="92dp"
+                    android:gravity="bottom"
+                    android:text="锡膏条码"
+                    android:textColor="@color/magenta" 
+                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+                <EditText
+                    android:id="@+id/smtfirst_scan_tinoedittext"
+                    android:layout_width="75dp"
+                    android:layout_height="38dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView1"
+                    android:layout_toLeftOf="@+id/smtfirst_scan_tinobutton" />
+                
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.08" >
+
+                <TextView
+                    android:id="@+id/TextView12"
+                    android:layout_width="219dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.37"
+                    android:gravity="center"
+                    android:text="PCB包装条码"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/magenta" />
+
+                <TextView
+                    android:id="@+id/TextView10"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.12"
+                    android:gravity="center"
+                    android:text="PCB条码"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/magenta" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_weight="0.04" >
+
+                <EditText
+                    android:id="@+id/Edit_VendorPCBSN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2.48"
+                    android:ems="10"
+                    android:hint="供应商条码"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/Edit_PCBSN"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="9.25"
+                    android:ems="10"
+                    android:hint="厂内管控条码"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/Button_GetWOInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.08"
+                    android:text="更换生产工单"
+                    android:textColor="@color/blue" />
+
+                <Button
+                    android:id="@+id/Button_ScanNextPacket"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.06"
+                    android:text="扫描下一包PCB"
+                    android:textColor="@color/blue" />
+
+                <Button
+                    android:id="@+id/Button_ResetScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.11"               
+                    android:text="重置扫描"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical" >
+
+ 
+
+                <CheckBox
+                    android:id="@+id/check_showAllInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="显示所有信息" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/Edit_SMTFirstInfo"
+                        android:layout_width="724dp"
+                        android:layout_height="621dp"
+                        android:clickable="false"
+                        android:editable="false"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:gravity="top"
+                        android:inputType="text|textMultiLine" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

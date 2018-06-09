@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightskyblue"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".StartDip" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="504dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+          <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/logo3" 
+                android:layout_marginBottom="15dp"
+          />
+          
+
+                
+          
+         <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:background="@drawable/corners_bg"
+                android:orientation="vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                
+                
+                >
+               <TextView 
+                   android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请先选择工单和线体"
+                   android:textSize="25sp"
+                 android:textColor="@color/red"
+                 android:textAppearance="?android:attr/textAppearanceMedium" 
+                   android:gravity="center"
+                   android:layout_margin="5dp"
+                   /> 
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:background="@drawable/corners_bg"
+                android:orientation="horizontal">
+
+             <Button
+                 android:id="@+id/tjbadcount_mobutton"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="25sp"
+                 android:text="≡工单≡" 
+                 android:textColor="@color/red"
+                 android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+             <EditText
+                 android:id="@+id/tjbadcount_moedit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:ems="10" 
+                  android:focusable="false"
+                 android:enabled="false"
+                 />
+             
+             </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:background="@drawable/corners_bg"
+                android:orientation="horizontal">
+
+             <Button
+                 android:id="@+id/tjbadcount_linebutton"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="25sp"
+                 android:text="≡线体≡" 
+                 android:textColor="@color/red"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 />
+
+             <EditText
+                 android:id="@+id/tjbadcount_lineedit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:ems="10" 
+                  android:focusable="false"
+                 android:enabled="false"/>
+             
+             </LinearLayout>
+            
+
+           </LinearLayout>  
+           
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:background="@drawable/corners_bg"
+                android:orientation="vertical"
+                 android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="18dp"
+                >
+               <TextView 
+                   android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="不良数目统计，按小时计"
+                   android:textSize="25sp"
+                 android:textColor="@color/red"
+                 android:textAppearance="?android:attr/textAppearanceMedium" 
+                   android:gravity="center"
+                   android:layout_margin="5dp"
+                   />
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:background="@drawable/corners_bg"
+                android:orientation="horizontal">
+
+             <TextView
+                 android:id="@+id/button1"
+                 android:layout_width="150dp"
+                 android:layout_height="wrap_content"
+                 android:text="HOUR:"
+                  android:textSize="25sp"
+                 android:textColor="@color/red"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+             <EditText
+                 android:id="@+id/tjbadcount_houredit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:ems="10" 
+                 android:focusable="false"
+                 android:enabled="false"
+                 />
+             
+             </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:background="@drawable/corners_bg"
+                android:orientation="horizontal">
+
+             <TextView
+                 android:id="@+id/button1"
+                 android:layout_width="150dp"
+                 android:layout_height="wrap_content"
+                 android:text="不良数量："
+                  android:textSize="25sp"
+                 android:textColor="@color/red"
+                 android:textAppearance="?android:attr/textAppearanceMedium" />
+
+             <EditText
+                 android:id="@+id/tjbadcount_countnumedit"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_weight="1"
+                 android:focusable="false"
+                 android:enabled="false"
+                 android:ems="10" />
+             
+             </LinearLayout>
+            
+
+           </LinearLayout>   
+           
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" 
+                android:background="@drawable/corners_bg">
+
+                <TextView
+                    android:layout_width="174dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="left"
+                    android:text="扫描不良固定代码"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/aqua" />
+
+                <EditText
+                    android:id="@+id/tjbadcount_snedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="15dp"
+                    android:autoText="false"
+                    android:contentDescription="@color/green"
+                    android:ems="10"
+                    android:singleLine="true" >
+
+                    
+                </EditText>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tjbadcount_editscan"
+         android:textSize="15dp"
+         android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/linearLayout1"
+        />
+
+</RelativeLayout>

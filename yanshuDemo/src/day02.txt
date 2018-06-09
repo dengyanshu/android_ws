@@ -1,0 +1,21 @@
+     
+1、单元测试
+      类继承自androidtestcase  
+      清单文件配置  根目录下 添加 instrumention  
+  <application><use-libiray></application>
+2、数据存储：/data/data/cn.yanshu
+    files文件存储  使用context.openoutputstream
+    sdcard  使用environment的方法和常量 获取路径  进行存储
+    sharedpreference  偏好设置  需要写数据 需要使用editor编辑器 
+ 3、文件权限
+    linux系统是10bit   第一位是文件类型  第2-4  用户权限  5-7 用户组权限 8-10其他用户权限
+    r  read
+    w  write
+    e  exe可执行
+ 4、xml写:
+     android下封装了一个工具类 XML 用此类的静态方法 获取一个序列化器seriali 然后写document  tag  然后循环写入
+     
+ 5、xml读：
+     xml工具类 获取pullparse  解析  传入输入流  循环根据pullparse的事件类型 只要不是文档结束
+	     就不停循环 pullparse.next()  再取事件类型
+	     循环内容用switch 判断 starttag  endtag   来初始化集合 和对象 nexttext 获取文本

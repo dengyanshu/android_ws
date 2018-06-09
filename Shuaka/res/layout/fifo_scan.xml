@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="fill_parent" android:layout_height="fill_parent"
+    		  android:orientation="vertical"  style="@style/style_1"  
+    		  android:paddingRight="5dp" android:paddingLeft="5dp">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                  android:orientation="horizontal">
+        <TextView android:layout_width="70dp" android:layout_height="wrap_content"
+            	  android:layout_marginTop="-5dp" android:text="@string/scan_smalpac_barcode" 
+            	  android:textSize="14dp"/>
+        <EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+            	  android:layout_marginLeft="8dp" android:id="@+id/edt_smalpac_barcode"
+            	  android:textSize="12dp"  android:singleLine="true"/>
+    </LinearLayout>
+    <include layout="@layout/common_btngroup_1" android:id="@+id/btnGroups" />      
+	<TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+    	  	  android:layout_marginTop="3dp" android:text="@string/fifoRes"
+    	  	  android:id="@+id/lab_fifoRes" android:textSize="14dp"/>
+    <TextView 	android:layout_width="fill_parent" android:layout_height="wrap_content"
+ 	  	  		android:layout_marginTop="3dp" android:text="@string/oldpack_details_clue" 
+ 	  	  		android:background="@color/puce" android:textSize="14dp"/>
+	<!-- 
+	     <include layout="@layout/common_edt_operatedetails" android:id="@+id/common_edtView_operateDetails"/>  
+	     <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+	              >  
+	      </LinearLayout>        
+	     -->
+	     	
+	<ListView  android:layout_width="fill_parent" android:layout_height="fill_parent"
+         	   android:id="@+id/ls_oldpack_details"  android:divider="@drawable/fifo_line"
+	           android:background="@color/thin_back"/> 	     
+ 	
+			 
+</LinearLayout>

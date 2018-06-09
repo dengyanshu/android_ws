@@ -1,0 +1,45 @@
+   1、application  指定了icon 和label
+   activity 也指定了icon 和label  的话
+       以activity的为准
+      <intent-filter>
+          ACTION.MAIN
+          LAUNCHER
+      </intent-filter>
+       四大组件必须都在清单文件进行配置
+  
+    
+    
+  2、隐式意图：
+           在activity 中配置意图过滤器  可以配置action category scheme 等比如打电话tel:
+    intent=new Intent();
+    intent.setAction(Intent.Action_CALL);
+    intent.setData(Uri.parse("TEL:119"));
+    startActivity(intent)
+      
+  3、显示意图
+     startActivity(new Intent(this,SecondActivity.class));
+             下个界面 调用this.getIntent 获取intent对象 然后获取intent携带数据
+             
+ 4、第一个界面写
+     startactivityforresult
+     onactivityResult
+     
+            第2个界面写：
+     setResult(RESULTCODE,INTENT)
+     finsh();
+     
+ 5、activity生命周期
+    onCreat  onDestory  ---------内存中是否存在
+    onStart  onStop     ----------界面可见与否（当界面前面有个透明的界面的时候 是可见的 但不能响应用户的）
+           当不需要onCreat重建的时候 会先调取onReStart(这个方法不用业务逻辑因为onStart必被调用)  
+           然后OnStart  onResume
+    onResume  onPause  ------------界面能响应用户
+    
+           当横竖屏 切换的时候 会摧毁掉activity 然后重绘 可以再配置activity的加配置选项 android:screenOrientention
+           
+      activity 的启动模式：
+      标准 默认
+      singeltop  当在最前的时候 不在开启
+      singeltask  任务栈中 存在 会清掉他前面的并显示
+      singleinstance  单例 会单独开栈 只存在一个
+        

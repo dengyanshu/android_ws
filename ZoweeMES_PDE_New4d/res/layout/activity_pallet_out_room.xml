@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/thin_back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/style_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:text="订单号"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_PalletOutRoomMoId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:singleLine="true"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:text="栈板号"
+                android:textSize="14dp" />
+
+              <EditText
+                android:id="@+id/edt_PalletOutRoomPalletNumber"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/btnGroups"
+        layout="@layout/common_btngroup_1" />
+
+    <include
+        android:id="@+id/common_edtView_operateDetails"
+        android:layout_width="306dp"
+        android:layout_height="398dp"
+        layout="@layout/common_edt_operatedetails" />
+
+</LinearLayout>

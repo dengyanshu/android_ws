@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 android:gravity="center"
+                 style="@style/textsize4d"
+                 android:layout_width="75dp"
+                 android:layout_height="match_parent"
+                 android:text="工单:" />
+
+        <EditText
+            android:id="@+id/jitchaolingkanban_moname"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true"
+           />
+            
+        </LinearLayout>
+       
+    </LinearLayout>
+  
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content"        
+        
+        
+        >
+        <Button 
+            android:onClick="clickme"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24dp"
+            android:text="按工单查询" 
+            android:textColor="@color/blue"
+            android:background="@drawable/button_bg"
+            
+           
+            />
+     </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+          
+         
+          <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:padding="3dp">
+           <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"          
+            android:layout_height="40dp"
+            android:text="工单"
+            android:background="@drawable/corners_bg"
+             />
+           
+           <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="超领单"
+            android:background="@drawable/corners_bg"
+            android:gravity="center_horizontal"
+        
+             />
+           <TextView
+           android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="40dp"
+            android:text="仓别"
+           
+            android:gravity="center_horizontal"
+            android:background="@drawable/corners_bg"
+             />
+           
+           
+           <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:text="状态"
+           
+            android:background="@drawable/corners_bg"
+            android:gravity="center_horizontal"
+             />
+           <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            
+            android:layout_height="40dp"
+            android:text="OA状态"
+            android:background="@drawable/corners_bg"
+            android:gravity="center_horizontal"
+             />
+          
+    </LinearLayout>
+         
+         <ListView 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/jitchaolingkanban_listview"
+          >
+             
+             
+         </ListView>
+        
+    </LinearLayout>
+    </LinearLayout>
+        
+     

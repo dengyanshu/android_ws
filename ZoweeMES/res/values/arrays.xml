@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="settings">
+ <!-- 该资源存储着软件设置选项 -->
+        <item>@string/ws_config</item>
+        <item>@string/laserScan_config</item>
+        <item>@string/mesupdate</item>
+        <item>@string/mesupdate_setting</item>
+        <item>@string/laser_Config</item>
+        <item>@string/smtstick_setting</item>
+        <item>条码规则配置</item>
+        <item>@string/about</item>
+    </string-array>
+    <string-array name="SMTStick_Parity">
+        <item>无校验 </item>
+        <item>奇校验</item>
+        <item>偶校验</item>
+        <item>标记</item>
+        <item>空格</item>
+    </string-array>
+    <string-array name="SMTStickPCBType">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+    <string-array name="DIP_StartType">
+        <item>整机出货 </item>
+        <item>单板出货</item>
+    </string-array>
+    <string-array name="SMTStickType">
+        <item>A过站B过站 </item>
+        <item>A贴标B过站</item>
+        <item>A过站B贴标 </item>
+        <item>A贴标B贴标</item>
+    </string-array>
+    <string-array name="Workshift">
+        <item>白班 </item>
+        <item>夜班</item>
+    </string-array>
+    <string-array name="SMTStick_tty">
+        <item>COM1</item>
+        <item>COM2</item>
+        <item>COM3</item>
+    </string-array>
+    <string-array name="SMTStick_bit">
+        <item>2400</item>
+        <item>4800</item>
+        <item>9600</item>
+        <item>19200</item>
+        <item>38400</item>
+        <item>57600</item>
+        <item>115200</item>
+        <item>230400</item>
+        <item>460800</item>
+        <item>921600</item>
+    </string-array>
+    <string-array name="SMTFirstScanPCBType">
+        <item>A</item>
+        <item>B</item>
+        <item>阴阳板</item>
+    </string-array>
+    <string-array name="SMTStickPCBSide">
+        <item>A</item>
+        <item>B</item>
+        <item>AB面</item>
+    </string-array>
+    <string-array name="Label_length">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+    </string-array>
+    <string-array name="SMTFirstScanPCBQuantity">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+    </string-array>
+        <string-array name="SMTFirstScanPCBQuantity1">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+    <string-array name="adapterSNlength">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="SMTStick_warn_time">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>08</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="checkpacking_arr">
+        <item>请选择</item><item >产品DSN</item>
+        <item >产品IMEI</item>
+        <item >产品MAC</item>
+        <item >产品SN</item>
+        <item >彩盒SN</item>
+        <item >彩盒IMEI</item>
+        <item >彩盒MAC</item>
+        <item >彩盒MEID</item>
+        
+    </string-array>
+
+    
+     <string-array name="smttptype">
+        <item>--请选择--</item>
+        <item >普通贴片</item>
+        <item >板边贴片</item>
+    </string-array>
+    <string-array name="smttpispure">
+        <item>--请选择--</item>
+        <item >非独立</item>
+        <item >独立</item>
+       
+    </string-array>
+    
+    <string-array name="smttprailselectside">
+        <item>--请选择--</item>
+        <item >A</item>
+        <item >B</item>
+    </string-array>
+</resources>

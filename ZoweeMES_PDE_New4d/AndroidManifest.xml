@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zowee.mes"
+    android:versionCode="16"
+    android:versionName="8.0" >
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application
+        android:name="com.zowee.mes.app.MyApplication"
+        android:icon="@drawable/app"
+        android:label="@string/app_name" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.zowee.mes.activity.LoginCheckActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.zowee.mes.MainActivity1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zowee.mes.activity.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.zowee.mes.activity.TabHost_1"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity android:name="com.zowee.mes.activity.StorageScanActivity" />
+        <activity
+            android:name="com.zowee.mes.activity.MaterialRewindActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity android:name="com.zowee.mes.activity.FifoScanActivity" />
+        <activity android:name="com.zowee.mes.activity.SplitStoreActivity" />
+        <activity android:name="com.zowee.mes.activity.QuantityAdjustActivity" />
+        <activity android:name="com.zowee.mes.activity.BatNumScanActivity" />
+        <activity
+            android:name="com.zowee.mes.activity.TabHost_2"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.TabHost_3"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.FinishOutCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.PrepareOperateActivity"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.FinishWareHouseCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.MaterialInventoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.FinishDeliCardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.FinishWareHouseCattonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.FinishOutCattonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity android:name="com.zowee.mes.activity.FeedOnMateriActivity" />
+        <activity android:name="com.zowee.mes.activity.CheMatStaTabActivity" />
+        <activity android:name="com.zowee.mes.activity.RemoveMateriActivity" />
+        <activity android:name="com.zowee.mes.activity.CommonActivity" />
+        <activity
+            android:name="com.zowee.mes.activity.FinishDeliCattonActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.WSConfigActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.LaserConfigActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.MESUpdateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog_update" />
+        <activity
+            android:name="com.zowee.mes.activity.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.MESPDAUpdateConfigActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.LaserFunctionConfigActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.AboutZoweeMesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog_about" />
+        <activity
+            android:name="com.zowee.mes.activity.CheckMoNamesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/dialog_checkMonames" />
+
+        <service android:name="com.zowee.mes.service.BackgroundService" />
+
+        <activity
+            android:name="com.zowee.mes.SMTFirstScan"
+            android:label="@string/title_activity_smtfirst_scan"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.SMTLade"
+            android:label="@string/title_activity_smtlade"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.SMTStorage"
+            android:label="@string/title_activity_smtstorage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.SMTStick"
+            android:label="@string/title_activity_smtstick"
+            android:screenOrientation="portrait" >
+
+            <!--
+                 <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.zowee.mes.SMTScanMaterial"
+            android:label="@string/title_activity_smtscan_material"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.SMTStickSetting"
+            android:label="SMT"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.DIPMaterialOnLine"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.DIPMaterialSignboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/full_screen" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.HuaweiTMisGetWeight"
+            android:label="华为中箱重量检查"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.PhoneOQCBoxBindActivity"
+            android:label="@string/title_activity_phone_oqcbox_bind"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.PalletOutRoomActivity"
+            android:label="@string/title_activity_pallet_out_room"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.MaterialReceiveActivity"
+               android:screenOrientation="portrait"
+            android:label="物料领料扫描" >
+        </activity>
+         <activity
+            android:name="com.zowee.mes.Imeicartoonboxcheck"
+               android:screenOrientation="portrait"
+            android:label="IMEI核对中箱程序" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.EquipmentMaintenance"
+               android:screenOrientation="portrait"
+            android:label="设备维护" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.MaintenanceSelect"
+               android:screenOrientation="portrait"
+            android:label="设备维护查询" >
+        </activity>
+         <activity
+            android:name="com.zowee.mes.EquipmentMaintenanceTabhost"
+               android:screenOrientation="portrait"
+            android:label="设备维护查询" >
+        </activity>
+        <activity
+               android:name="com.zowee.mes.SmtIPQC"
+               android:screenOrientation="portrait"
+               android:label="SMT-IPQC" >
+        </activity>
+        
+         <activity
+               android:name="com.zowee.mes.TJchuhuoscan"
+               android:screenOrientation="portrait"
+               android:label="天津出货扫描" >
+        </activity>
+        
+        <activity
+               android:name="com.zowee.mes.InstrumentTabhostactivity"
+               android:screenOrientation="portrait"
+               android:label="治具管控" >
+        </activity>
+        <activity
+               android:name="com.zowee.mes.Instrument_linesetup"
+               android:screenOrientation="portrait"
+               android:label="线体架设" >
+        </activity>
+         <activity
+               android:name="com.zowee.mes.Instrument_removebinding"
+               android:screenOrientation="portrait"
+               android:label="线体架设" >
+        </activity>
+         <activity
+               android:name="com.zowee.mes.Instrument_molinkworkcenter"
+               android:screenOrientation="portrait"
+               android:label="线体架设" >
+        </activity>
+        <activity
+               android:name="com.zowee.mes.Instrument_query"
+               android:screenOrientation="portrait"
+               android:label="线体架设" >
+        </activity>
+        
+         <activity
+               android:name="com.zowee.mes.testscan"
+               android:screenOrientation="portrait"
+               android:label="testscan" >
+        </activity>
+        
+        <activity
+               android:name=".Tjchuhuo_yy"
+               android:screenOrientation="portrait"
+               android:label="天津云蚁出货" >
+        </activity>
+        <activity
+               android:name=".Smtreceivematerial"
+               android:screenOrientation="portrait"
+               android:label="SMT收料" >
+        </activity>
+         <activity
+               android:name=".SmtChaoling"
+               android:screenOrientation="portrait"
+               android:label="物料超领" >
+        </activity>
+        <activity
+               android:name=".SmtChaolingMoinfo"
+               android:screenOrientation="portrait"
+               android:theme="@android:style/Theme.Dialog"
+               android:label="物料超领工单选择" >
+        </activity>
+        
+        <activity
+               android:name=".Smtshangliaoslot"
+               android:screenOrientation="portrait"
+               android:label="查询物料所属槽位" >
+        </activity>
+        
+        <activity
+               android:name=".Smtjitshouliao"
+               android:screenOrientation="portrait"
+               android:label="非料站表备料" >
+        </activity>
+        
+        
+         <activity
+               android:name=".jitmz"
+               android:screenOrientation="portrait"
+               android:label="非料站表备料" >
+        </activity>
+        <activity
+               android:name=".SmtqtyChange"
+               android:screenOrientation="portrait"
+               android:label="数量调整" >
+        </activity>
+        
+           <activity
+               android:name=".PalletOut"
+               android:screenOrientation="portrait"
+               android:label="栈板邮件" >
+        </activity>
+        
+             <activity
+               android:name=".Smtpeoplescan"
+               android:screenOrientation="portrait"
+               android:label="SMT在岗人员扫描" >
+        </activity>
+        
+          <activity
+               android:name=".Smtjitchaolingkanban"
+               android:screenOrientation="portrait"
+               android:label="---SMT超领看板-- "
+           >
+        </activity>
+        
+          
+            <activity
+               android:name=".JitmzSpilt"
+               android:screenOrientation="portrait"
+               android:label="---JIT物料拆分-- "
+           >
+        </activity>
+        
+             <activity
+               android:name=".DeviceListActivity"
+               android:screenOrientation="portrait"
+               android:label="---JIT物料拆分-- "
+           >
+        </activity>
+        
+             <activity
+               android:name=".ZdhPandian"
+               android:screenOrientation="portrait"
+               android:label="---自动化用设备盘点-- "
+           >
+        </activity>
+        
+             
+               <activity
+               android:name=".FdRepari"
+               android:screenOrientation="portrait"
+               android:label="---飞达故障标记- "
+           >
+        </activity>
+        
+               
+                 <activity
+               android:name=".GdReplace"
+               android:screenOrientation="portrait"
+               android:label="---刮刀替换---"
+           >
+        </activity>
+        
+               
+                 <activity
+               android:name=".GdOnline"
+               android:screenOrientation="portrait"
+               android:label="---刮刀上线下线---"
+           >
+        </activity>
+        
+                 
+        <activity
+               android:name=".Cangkuchuhuo"
+               android:screenOrientation="portrait"
+               android:label="--扫描栈板--"
+           >
+        </activity>
+        <activity
+               android:name=".Cangkuchuhuo2"
+               android:screenOrientation="portrait"
+               android:label="--仓库发货离线核对--"
+           >
+        </activity>
+        
+        
+         <activity
+            android:name=".XbcTabhost"
+            android:screenOrientation="portrait"
+            android:label="线边仓库位绑定" >
+        </activity>
+        
+         
+          <activity
+            android:name=".Xbcbinding"
+            android:screenOrientation="portrait"
+            android:label="线边仓库位绑定" >
+        </activity>
+        
+          
+            <activity
+            android:name=".Xbcunbinding"
+            android:screenOrientation="portrait"
+            android:label="线边仓库位解绑" >
+        </activity>
+        
+        <activity
+            android:name=".XbcunbindingSingle"
+            android:screenOrientation="portrait"
+            android:label="线边仓库位解绑单个" >
+        </activity>
+        
+        
+        
+          <activity
+               android:name=".Smtipqcmz"
+               android:screenOrientation="portrait"
+               android:label="--smt上料后品质全检核对--"
+           >
+        </activity>
+        
+            
+    </application>
+
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+ <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.zowee.mes" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />  
+    <uses-feature android:name="android.hardware.camera" />  
+    <uses-feature android:name="android.hardware.camera.autofocus" /> 
+
+</manifest>

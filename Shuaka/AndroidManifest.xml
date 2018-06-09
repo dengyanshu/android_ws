@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zowee.mes"
+    android:versionCode="21"
+    android:versionName="8.0" >
+   <!-- android:sharedUserId="android.uid.system" --> 
+    
+  
+
+    <uses-sdk android:minSdkVersion="10" />
+
+    <application
+        android:name="com.zowee.mes.app.MyApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <uses-library android:name="android.test.runner" />
+       
+        <receiver android:name="com.zowee.mes.broadcast.BootBroadcastReceiver">  
+	        <intent-filter>  
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />  
+		        <category android:name="android.intent.category.HOME" /> 
+	        </intent-filter>  
+       </receiver>  
+       <activity android:name="com.android.settings.SelectMenuActivity"
+         		android:screenOrientation="landscape">
+        </activity>
+        
+        <activity
+            android:name="com.zowee.mes.activity.LoginCheckActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" >
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                </intent-filter>
+            
+        </activity>
+        <activity
+            android:name="com.zowee.mes.MainActivity1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.zowee.mes.activity.MainActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.zowee.mes.activity.TabHost_1"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity android:name="com.zowee.mes.activity.StorageScanActivity" />
+        <activity
+            android:name="com.zowee.mes.activity.MaterialRewindActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity android:name="com.zowee.mes.activity.FifoScanActivity" />
+        <activity android:name="com.zowee.mes.activity.SplitStoreActivity" />
+        <activity android:name="com.zowee.mes.activity.QuantityAdjustActivity" />
+        <activity android:name="com.zowee.mes.activity.BatNumScanActivity" />
+        <activity
+            android:name="com.zowee.mes.activity.TabHost_2"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.TabHost_3"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.FinishOutCardActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.PrepareOperateActivity"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.FinishWareHouseCardActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.MaterialInventoryActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.FinishDeliCardActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.FinishWareHouseCattonActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.FinishOutCattonActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity android:name="com.zowee.mes.activity.FeedOnMateriActivity" />
+        <activity android:name="com.zowee.mes.activity.CheMatStaTabActivity" />
+        <activity android:name="com.zowee.mes.activity.RemoveMateriActivity" />
+        <activity android:name="com.zowee.mes.activity.CommonActivity" />
+        <activity
+            android:name="com.zowee.mes.activity.FinishDeliCattonActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.WSConfigActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.LaserConfigActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.MESUpdateActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/dialog_update" />
+        <activity
+            android:name="com.zowee.mes.activity.SettingActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.MESPDAUpdateConfigActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.LaserFunctionConfigActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/full_screen" />
+        <activity
+            android:name="com.zowee.mes.activity.AboutZoweeMesActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/dialog_about" />
+        <activity
+            android:name="com.zowee.mes.activity.CheckMoNamesActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/dialog_checkMonames" />
+
+        <service android:name="com.zowee.mes.service.BackgroundService" />
+
+        <activity
+            android:name="com.zowee.mes.SMTFirstScan"
+            android:label="@string/title_activity_smtfirst_scan"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.SMTFirstScanBB"
+            android:label="@string/title_activity_smtfirst_scan"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.SMTLade"
+            android:label="@string/title_activity_smtlade"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.SMTStorage"
+            android:label="@string/title_activity_smtstorage"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.SMTStick"
+            android:label="@string/title_activity_smtstick"
+            android:screenOrientation="landscape" >
+
+            <!--
+                 <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.zowee.mes.SMTScanMaterial"
+            android:label="@string/title_activity_smtscan_material"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.SMTStickSetting"
+            android:label="SMT"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.StartDip"
+            android:label="@string/title_activity_start_dip"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.StartSMTToDip"
+            android:label="@string/title_activity_start_smtto_dip"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.StartDIPSO"
+            android:label="@string/title_activity_start_dipso"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.MobileSMTToDIP"
+            android:label="@string/title_activity_mobile_smtto_dip" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.EyeCheckActivity"
+            android:label="@string/title_activity_eye_check"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.TJOQCCheckActivity"
+            android:label="@string/title_activity_tjoqccheck"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.BoxLotSNCheckActivity"
+            android:label="@string/title_activity_box_lot_sncheck"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.zowee.mes.SMTStick_Old"
+            android:label="@string/title_activity_smtstick__old" >
+        </activity>
+         <activity
+            android:name="com.zowee.mes.Tino"
+             android:screenOrientation="landscape" 
+            android:label="锡膏扫描">
+        </activity>
+        <activity
+            android:name="com.zowee.mes.BindPcb"
+             android:screenOrientation="landscape" 
+            android:label="联板SN绑定">
+        </activity>
+        <activity
+            android:name="com.zowee.mes.LineQtyselect"
+             android:screenOrientation="landscape" 
+            android:label="线体投入数量查询">
+        </activity>
+       <activity
+            android:name="com.zowee.mes.Lineselect"
+             android:screenOrientation="landscape" 
+             android:theme="@android:style/Theme.Dialog"
+            android:label="选择线体">
+        </activity>
+         <activity
+            android:name="com.zowee.mes.LineSnInput"
+             android:screenOrientation="landscape" 
+            android:label="天津紫米SN投入">
+        </activity>
+        
+         <activity
+            android:name="com.zowee.mes.SmtFvmi"
+             android:screenOrientation="landscape" 
+            android:label="SMTFVMI">
+        </activity>
+        <activity
+            android:name="com.zowee.mes.Sntocar"
+             android:screenOrientation="landscape" 
+            android:label="SNTOCAR">
+        </activity>
+        <activity
+            android:name="com.zowee.mes.Tjzimiproduct"
+             android:screenOrientation="landscape" 
+            android:label="天津紫米产品投入">
+        </activity>
+        <activity
+            android:name="com.zowee.mes.Tjzimipower"
+             android:screenOrientation="landscape" 
+            android:label="天津紫米电源投入">
+        </activity>
+        <activity
+            android:name="com.zowee.mes.Tjzimirepairin"
+             android:screenOrientation="landscape" 
+            android:label="天津紫米维修入库">
+        </activity>
+        <activity
+            android:name="com.zowee.mes.Tjzimirepairput"
+             android:screenOrientation="landscape" 
+            android:label="天津紫米维修出库">
+        </activity>
+         <activity
+            android:name="com.zowee.mes.Checkpacking"
+             android:screenOrientation="landscape" 
+            android:label="通用彩盒核对程序">
+        </activity>
+      
+         	<activity android:name="com.zowee.mes.activity.File1activity"
+         		android:screenOrientation="landscape"
+         		android:label="松岗四楼程序合集"
+         		android:theme="@android:style/Theme.Dialog"
+         		>
+         	</activity>
+         	<activity android:name="com.zowee.mes.activity.File2activity"
+         		android:screenOrientation="landscape"
+         		android:label="天津程序合集"
+         		>
+         	</activity>
+         	<activity android:name="com.zowee.mes.activity.File3activity"
+         		android:screenOrientation="landscape"
+         		android:label="卓大联想程序合集"
+         		android:theme="@android:style/Theme.Dialog"
+         		>
+         	</activity>
+         	<activity android:name="com.zowee.mes.activity.File4activity"
+         		android:screenOrientation="landscape"
+         		android:label="卓大海尔程序合集"
+         		android:theme="@android:style/Theme.Dialog"
+         		>
+         	</activity>
+         	<activity android:name="com.zowee.mes.activity.File5activity"
+         		android:screenOrientation="landscape"
+         		android:label="工具类软件程序合集"
+         		android:theme="@android:style/Theme.Dialog"
+         		>
+         	</activity>
+         <activity android:name="com.zowee.mes.Biaoqianhedui"
+         		android:screenOrientation="landscape"
+         		android:label="标签核对">
+         	</activity>
+         <activity android:name="com.zowee.mes.SNcheckandwritelog"
+         		android:screenOrientation="landscape"
+         		android:label="天津条码核对并写日志">
+         	</activity>
+         	
+         	<activity android:name="com.zowee.mes.Tiebiaozhuandsn"
+         		android:screenOrientation="landscape"
+         		android:label="四楼贴标转（光模块）-转DSN-无">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Xiaojiegouckp"
+         		android:screenOrientation="landscape"
+         		android:label="四楼小结构CKP">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Anxuzhuangxiang"
+         		android:screenOrientation="landscape"
+         		android:label="四楼按序装箱">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Printtest"
+         		android:screenOrientation="landscape"
+         		android:label="打印测试">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Tjzimicaihebangding"
+         		android:screenOrientation="landscape"
+         		android:label="紫米彩盒绑定">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Tjzimicaihezhuangxiang"
+         		android:screenOrientation="landscape"
+         		android:label="紫米彩盒装箱">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Tjzimioqc"
+         		android:screenOrientation="landscape"
+         		android:label="紫米OQC">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Tjzimidianyuantouru"
+         		android:screenOrientation="landscape"
+         		android:label="紫米电源投入">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Tjzimiweixiu"
+         		android:screenOrientation="landscape"
+         		android:label="紫米电源维修">
+         	</activity>
+         	
+         	
+         	<activity android:name="com.zowee.mes.Assyqidong"
+         	    android:configChanges="orientation|keyboardHidden|screenSize"
+         		android:screenOrientation="landscape"
+         		android:label="联想平板条码启动">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Bujianbangding"
+         		android:screenOrientation="landscape"
+         		android:label="联想平板组装绑定">
+         	</activity>
+         	<!-- Liuloufvmi 有3站 有开机测试 、功能测试、 目检 -->
+         	<activity android:name="com.zowee.mes.Liuloufvmi"
+         		android:screenOrientation="landscape"
+         		android:label="联想平板目检">
+         	</activity>
+         	<!-- laohua 有老化入库和老化出库 出库失败 重新入库老化 -->
+         	<activity android:name="com.zowee.mes.Liuloulaohua"
+         		android:screenOrientation="landscape"
+         		android:label="联想平板老化">
+         	</activity>
+         	
+         	<activity android:name="com.zowee.mes.Haiercailiaobangding"
+         		android:screenOrientation="landscape"
+         		android:label="海尔平板材料绑定">
+         	</activity>
+         	
+         	<activity android:name="com.zowee.mes.Haierzhengjisnbangding"
+         		android:screenOrientation="landscape"
+         		android:label="海尔平板整机SN绑定">
+         	</activity>
+         	
+         	<activity android:name="com.zowee.mes.Lenovofvmi"
+         		android:screenOrientation="landscape"
+         		android:label="联想平板smt目检">
+         	</activity>
+         	
+         	<activity android:name="com.zowee.mes.Lenovotocar"
+         		android:screenOrientation="landscape"
+         		android:label="联想平板smt装车">
+         	</activity>
+         	<activity android:name="com.zowee.mes.M8000cp"
+         		android:screenOrientation="landscape"
+         		android:label="M800打印测试">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Tjzimipowertest"
+         		android:screenOrientation="landscape"
+         		android:label="天津紫米PB05电源测试">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Signin"
+         		android:screenOrientation="landscape"
+         		android:label="线头刷卡程序">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Tjzicommonpassstation"
+         		android:screenOrientation="landscape"
+         		android:label="天津通用过站程序">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Tjdipstart"
+         		android:screenOrientation="landscape"
+         		android:label="天津DIP_启动">
+         	</activity>
+         	
+         	<activity android:name="com.zowee.mes.Bujianbangding2"
+         		android:screenOrientation="landscape"
+         		android:label="卓达联想PAD整机部件绑定">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Hanjiejiboxing"
+         		android:screenOrientation="landscape"
+         		android:label="焊接机配置">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Hanjiejipeizhi"
+         		android:screenOrientation="landscape"
+         		android:label="焊接机波形">
+         	</activity>
+         	<activity android:name="com.zowee.mes.HanjiejiTabhost"
+         		android:screenOrientation="landscape"
+         		android:label="焊接机波形">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Tjbadcount"
+         		android:screenOrientation="landscape"
+         		android:label="天津不良数量统计">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Tjbadcountmoselect"
+         		android:screenOrientation="landscape"
+         		android:theme="@android:style/Theme.Dialog"
+         		android:label="工单选择">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Tjbadcountlineselect"
+         		android:screenOrientation="landscape"
+         		android:theme="@android:style/Theme.Dialog"
+         		android:label="线体选择">
+         	</activity>
+         	<activity android:name="com.zowee.mes.SmtTP"
+         		android:screenOrientation="landscape"
+         		android:label="SMT坐标扫描贴片">
+         	</activity>
+         	
+         	<activity android:name="com.zowee.mes.Hanjieji"
+         		android:screenOrientation="landscape"
+         		android:label="焊接机（新）">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Smprintting"
+         		android:screenOrientation="landscape"
+         		android:label="---SMT锡膏印刷自动扫描---">
+         	</activity>
+         	<activity android:name="com.zowee.mes.SMTTP_New"
+         		android:screenOrientation="landscape"
+         		android:label="---SMT贴片过站（6轴自动扫描）---">
+         	</activity>
+         	<activity android:name="com.zowee.mes.SMTTP_MANUAL"
+         		android:screenOrientation="landscape"
+         		android:label="---SMT贴片过站 手动模式---">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Webservice_test"
+         		android:screenOrientation="landscape"
+         		android:label="---WEBSERVICE_TEST---">
+         	</activity>
+         	<activity android:name="com.zowee.mes.Shuaka"
+         		android:screenOrientation="landscape"
+         		android:label="---上下岗刷卡---">
+         	</activity>
+         	<activity android:name="com.zowee.mes.SmtTPforCommon"
+         		android:screenOrientation="landscape"
+         		android:label="---通用贴片---">
+         		
+         	</activity>
+         	<activity android:name=".SMTXG"
+         		android:screenOrientation="landscape"
+         		android:label="---锡膏二次添加---">
+         	</activity>
+         	
+    </application>
+    
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RUN_INSTRUMENTATION" />
+   <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" /> 
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.zowee.mes" />
+
+
+</manifest>

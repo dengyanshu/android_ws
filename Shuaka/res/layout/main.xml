@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="fill_parent" android:layout_height="fill_parent"
+    		  android:orientation="vertical" android:background="@color/thin_back">
+    <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content"
+				     android:orientation="horizontal"  android:id="@+id/radioGroup">
+			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					     android:id="@+id/btn_first_tab" style="@style/rg_main_btn_style"
+					     android:text="@string/first_tab_txt"/>
+			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					     android:id="@+id/btn_second_tab"  style="@style/rg_main_btn_style" android:text="@string/second_tab_txt"/>
+			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					     android:id="@+id/btn_third_tab" style="@style/rg_main_btn_style" android:text="@string/third_tab_txt"/>
+			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					     android:id="@+id/btn_fourth_tab" style="@style/rg_main_btn_style" android:text="@string/fourth_tab_txt"/>
+			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					     android:id="@+id/btn_fifth_tab" style="@style/rg_main_btn_style" android:text="@string/fiftg_tab_txt"/>
+	</RadioGroup>
+	<include layout="@layout/common_tabhost"/>
+</LinearLayout>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

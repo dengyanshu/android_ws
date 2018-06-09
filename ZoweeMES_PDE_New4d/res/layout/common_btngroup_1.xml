@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="wrap_content" android:layout_height="wrap_content"
+    		  android:orientation="horizontal" android:gravity="center"
+    		  android:paddingTop="3dp">
+    
+    <Button  android:layout_width="55dp" android:layout_height="wrap_content"
+             style="@style/btn_comBtnGroup"  
+			 android:text="@string/scan"	android:id ="@+id/btn_scan"/>
+    <Button  android:layout_width="55dp" android:layout_height="wrap_content"
+              style="@style/btn_comBtnGroup"
+			  android:text="@string/ensure"	android:id ="@+id/btn_ensure"/>
+    <Button  android:layout_width="55dp" android:layout_height="wrap_content"
+         	  style="@style/btn_comBtnGroup"
+			  android:text="@string/cancel"	android:id ="@+id/btn_cancel"/>
+    <Button  android:layout_width="55dp" android:layout_height="wrap_content"
+         	 style="@style/btn_comBtnGroup"  android:text="@string/refreshData"	
+         	 android:id ="@+id/btn_refreshData"/>
+    
+</LinearLayout>

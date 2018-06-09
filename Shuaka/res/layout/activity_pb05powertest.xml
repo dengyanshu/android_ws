@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    android:background="@color/lightblue"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="@color/lightskyblue">
+  
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="90dp"
+            android:src="@drawable/logo3" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_vertical|center_horizontal"
+            android:text="PB05电流测试"
+            android:textColor="@color/red"
+            android:textSize="60sp"
+            android:textStyle="normal|bold|italic" />
+
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/corners_bg"
+       
+        
+        >
+        <TextView 
+                    android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                    android:text="电流标准上下限(A)："
+                    android:textColor="@color/red"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    android:textSize="20sp"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_biaozhunzhixiatv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    
+                    android:textColor="@color/blue"
+                     android:textSize="20sp"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                     android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="~"
+                    android:textColor="@color/red"
+                     android:layout_marginLeft="10dp"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                     android:textSize="20sp"
+                    android:id="@+id/tjzimipowertest_biaozhunzhishangtv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                     android:layout_marginLeft="10dp"
+                   
+                    android:textColor="@color/blue"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    /> 
+                <Button 
+                    android:id="@+id/tjzimipowertest_testbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="testyong"
+                    android:visibility="invisible"
+                    />
+                <Button 
+                    android:id="@+id/tjzimipowertest_testbutton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="testyong2"
+                    android:visibility="invisible"
+                    />
+        
+        
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal" 
+        android:background="@drawable/corners_bg"
+       >
+
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="1"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"
+                />
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi1"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/tjzimipowertest_layout2"
+            
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="2"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi2"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+             android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="3"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+               android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textStyle="bold"
+                    android:textColor="@color/blue"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi3"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+             android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="4"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res4"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi4"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+             android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="5"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res5"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+               android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi5"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+             android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="6"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res6"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi6"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+             android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="7"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res7"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi7"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+             android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="8"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res8"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi8"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" 
+        android:background="@drawable/corners_bg"
+        
+        >
+
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout9"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="9"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res9"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi9"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+            android:layout_marginLeft="5dp"
+            
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="10"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res10"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi10"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout11"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+             android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="11"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res11"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi11"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+             android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="12"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res12"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi12"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout13"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+             android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="13"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res13"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi13"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+             android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="14"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res14"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi14"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+             android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="15"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res15"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi15"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tjzimipowertest_layout16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" 
+            android:background="@color/white"
+             android:layout_marginLeft="5dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:text="16"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textColor="@color/black"
+                android:textSize="70sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tjzimipowertest_res16"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center"
+                android:text="WAIT.."
+                android:textSize="40sp" 
+                android:textColor="@color/green"
+                android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                android:textStyle="bold|italic"/>
+
+           
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView 
+                    android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                    android:text="测试电流值(A)："
+                    android:textColor="@color/blue"
+                    android:textStyle="bold"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                <TextView 
+                    android:id="@+id/tjzimipowertest_ceshizhi16"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                    android:textColor="@color/green"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/tjzimipowertest_debugtv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/green"
+        android:text="DEBUG模式："
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+        android:visibility="gone"
+        />
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" 
+        android:id="@+id/tjzimipowertest_relative"
+        android:background="@drawable/corners_bg"
+        android:padding="8dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        >
+        
+         <Button 
+             android:id="@+id/tjzimipowertest_button"
+              android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:text="OK!已经设定完毕！"
+             android:layout_alignParentLeft="true"
+             android:textStyle="bold"
+             android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+             android:layout_toLeftOf="@+id/tjzimipowertest_shezhitv1"
+             />
+  
+         <TextView
+             android:id="@+id/tjzimipowertest_shezhitv1"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:layout_toLeftOf="@+id/tjzimipowertest_biaozhunxiaedit"
+             android:gravity="center"
+             android:singleLine="true"
+             android:text="请设定电流标准上限值（A）,最小："
+             android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+             android:textColor="@color/red" />
+
+                <EditText 
+                    android:id="@+id/tjzimipowertest_biaozhunxiaedit"
+                     android:layout_width="wrap_content"
+                      android:layout_height="match_parent"
+                      android:layout_toLeftOf="@+id/tjzimipowertest_shezhitv2"
+                    android:textColor="@color/blue"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    android:text="1.6"
+                    />
+
+                 <TextView
+                     android:id="@+id/tjzimipowertest_shezhitv2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_toLeftOf="@+id/tjzimipowertest_biaozhunshangedit"
+                     android:gravity="center"
+                     android:singleLine="true"
+                     android:text="最大"
+                     android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                     android:textColor="@color/red" />
+
+                <EditText 
+                    android:id="@+id/tjzimipowertest_biaozhunshangedit"
+                     android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                     android:textColor="@color/blue"
+                     android:text="1.8"
+                    android:textAppearanceMedium="?android:attr/textAppearanceMedium"
+                    />
+                
+
+    </RelativeLayout>
+</LinearLayout>

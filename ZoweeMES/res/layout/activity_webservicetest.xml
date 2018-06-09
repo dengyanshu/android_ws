@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context=".activity.CheckMoNamesActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@drawable/corners_bg_title">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            
+           
+            android:src="@drawable/logo3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_vertical|center_horizontal"
+            android:text="webservice_test"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+            android:textSize="60sp"
+            android:textStyle="normal|bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="@color/lightblue">
+
+        <LinearLayout
+            android:layout_width="595dp"
+            android:layout_height="537dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="0dp" >
+            
+            
+            
+           
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/corners_bg"
+                android:padding="5dp"
+                >
+               
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="上扫描头条码信息："
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" 
+                        android:gravity="center"
+                        />
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                       
+                        >
+                        
+                    </LinearLayout>
+                    
+                    
+                
+
+                
+                    
+                   
+
+
+            </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/corners_bg"
+               >
+                  <TextView
+                    android:layout_width="480dp"
+                    android:layout_height="50dp"
+                    android:text="如是板边条码，请设置条码张贴上下："
+                    android:textColor="@color/red" 
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    />
+                
+            </LinearLayout>
+              <LinearLayout
+                  android:id="@+id/smttp_new_banbian_clearfous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               >
+                 
+                
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:layout_marginTop="10dp"
+                android:background="@drawable/corners_bg"
+                android:layout_margin="10dp">
+
+                <Button
+                     android:id="@+id/webservice_test_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:text="点击获取信息!!!" 
+                    android:textColor="@color/green"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corners_bg"
+            >
+
+            <EditText
+                android:id="@+id/smttp_new_editscan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1.31"
+                android:ems="10"
+                android:gravity="top"
+                android:enabled="false"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

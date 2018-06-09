@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@color/lightblue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            />
+        
+        <RadioGroup 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="horizontal"
+             android:id="@+id/tabhost_xbc_radiogroup"
+             android:background="@color/white"
+            >
+            
+            <RadioButton
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" 
+                android:text="物料绑定"
+                android:drawableTop="@drawable/searchsmall"
+                android:id="@+id/tabhost_xbc_radiobutton1"
+                 android:gravity="center_horizontal"
+                  android:button="@null"
+                  android:paddingLeft="30dp"
+                  android:paddingRight="30dp"
+                  android:textColor="@color/black"
+                />
+
+              <RadioButton
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="物料解绑"
+                  android:textColor="@color/black"
+                   android:drawableTop="@drawable/searchsmall"
+                   android:id="@+id/tabhost_xbc_radiobutton2"
+                   android:gravity="center_horizontal"
+                   android:button="@null"
+                android:paddingLeft="30dp"
+                  android:paddingRight="30dp"
+                  
+                />
+              
+              <RadioButton
+                  android:layout_width="0dp"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="单个解绑"
+                  android:textColor="@color/black"
+                   android:drawableTop="@drawable/searchsmall"
+                   android:id="@+id/tabhost_xbc_radiobutton3"
+                   android:gravity="center_horizontal"
+                   android:button="@null"
+                android:paddingLeft="30dp"
+                  android:paddingRight="30dp"
+                  
+                />
+            
+         </RadioGroup>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

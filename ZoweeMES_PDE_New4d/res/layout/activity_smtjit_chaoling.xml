@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical"
+    android:showDividers="middle" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+           <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+             android:id="@+id/smtipqc_motextview"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="工单"
+            android:textColor="@color/red"
+            android:textSize="14dp" />
+
+            <EditText
+            android:id="@+id/smtjitchaoling_moedit"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:textSize="12dp" 
+            android:enabled="false"
+            android:focusable="false"
+            />
+            
+            <Button 
+                android:id="@+id/smtjitchaoling_mobutton"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="≡工单≡"
+                 android:textColor="@color/red"
+                 android:textSize="12sp"
+                 android:onClick="moonclick"
+                
+                />
+             
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="线体"
+            android:textColor="@color/red"
+            android:textSize="14dp" />
+
+            <Spinner
+            android:id="@+id/smtjitchaoling_workcenterSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="8dp"
+            android:hint="扫描机台槽位号"
+            android:entries="@array/WORKCENTERNAME"
+            />
+             
+         </LinearLayout>
+          <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="仓别"
+            android:textColor="@color/red"
+            android:textSize="14dp" />
+
+            <Spinner
+            android:id="@+id/smtjitchaoling_StockSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginLeft="8dp"
+            android:entries="@array/SMTJIT_stock"
+           />
+             
+         </LinearLayout>
+          <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="物料条码"
+            android:textColor="@color/red"
+            android:textSize="14dp" />
+
+            <EditText
+            android:id="@+id/smtjitchaoling_mzlotedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:textSize="12dp" 
+            android:hint="扫描物料条码"
+            />
+             
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="数量"
+            android:textColor="@color/red"
+            android:textSize="14dp" />
+
+            <EditText
+            android:id="@+id/smtjitchaoling_chaolingnumedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:textSize="12dp" 
+            android:hint="输入超领数量"
+            />
+             
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+             
+         </LinearLayout>
+       
+    </LinearLayout>
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal" >
+         <Button 
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24dp"
+            android:text="确认超领" 
+            android:textColor="@color/blue"
+            android:background="@drawable/button_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:onClick="submit"
+            />
+         
+         <Button 
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24dp"
+            android:text="提交OA" 
+            android:textColor="@color/blue"
+            android:background="@drawable/button_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:onClick="oa"
+            />
+         
+      </LinearLayout>
+     
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+           <EditText
+                android:id="@+id/smtjitchaoling_editscan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:gravity="top"
+                android:textSize="15sp" 
+                android:focusable="false"/>
+        
+    </LinearLayout>
+    
+
+    
+
+</LinearLayout>

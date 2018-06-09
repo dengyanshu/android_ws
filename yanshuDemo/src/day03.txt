@@ -1,0 +1,22 @@
+1、上午是sqlitedatabase  创建的数据库会在/data/data/cn.yanshu/database 目录下创建一个数据库
+    写自己的类继承自sqliteopenhelper 父类没有无参的构造函数 需要传入数据库的名字等参数
+   重写2个方法  第一个是数据库创建的时候 执行 数据库版本进行变更执行的逻辑
+   
+  demo的代码意义：
+  1、sqliteopenhelper子类对象  获取数据库实体
+  2、用sqlitedatabase 进行增删改查操作
+  
+  
+  
+2、listview控件
+        继承自baseadapter ：
+        复写其中的总数据数 
+    getview方法：该方法返回一个view对象    用于每个位置显示的item
+
+    
+3、listview的缓存：
+        当listview  条目很多 不使用convertview缓存对象的话 会存在严重的内容溢出问题
+       这样系统的view对象只有一屏幕的view对象 后面所有的view都是reuse对象  系统只用创建一屏幕的20个view对象
+       
+       
+4、listview的优化 （高度必须要用match_parent  如果用包裹的 会被重复调用  影响性能）

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+ <smss>
+        <sms id='1'>
+            <name>xiaozhang</name>
+            <content>today  so happy</content>
+        </sms>
+         <sms id='2'>
+             <name>xiaolong</name>
+             <content>thank  godness</content>
+         </sms>
+  </smss>

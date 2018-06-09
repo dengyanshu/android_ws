@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/lightblue">
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:padding="3dp">
+           <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1.5"          
+            android:layout_height="30dp"
+            android:text="序列号"
+            android:background="@drawable/corners_bg"
+             />
+           
+           <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="30dp"
+            android:text="设备名称"
+            android:background="@drawable/corners_bg"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+             />
+           <TextView
+           android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="30dp"
+            android:text="设备位置"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/corners_bg"
+             />
+           
+           
+           <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:text="周期\n(天)"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/corners_bg"
+            android:gravity="center_horizontal"
+             />
+           <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_height="30dp"
+            android:text="上次\n维护"
+            android:background="@drawable/corners_bg"
+            android:gravity="center_horizontal"
+             />
+           <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="30dp"
+            android:text="下次\n维护"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/corners_bg"
+            android:gravity="center_horizontal"
+             />
+    </LinearLayout>
+    
+   <ListView 
+       
+          android:id="@+id/maintenanceselect_listview"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:dividerHeight="3dp"
+          android:divider="@color/red"
+          android:layout_margin="3dp"
+          
+        >
+        
+    </ListView>
+    
+
+</LinearLayout>

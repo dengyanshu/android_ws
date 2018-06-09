@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="settings"><!-- 该资源存储着软件设置选项 -->
+	    <item>@string/ws_config</item>
+	    <item>@string/laserScan_config</item>
+	    <item>@string/mesupdate</item>
+	    <item>@string/mesupdate_setting</item>
+	    <item>@string/laser_Config</item>
+	    <item>@string/smtstick_setting</item>
+	    <item>@string/about</item>
+	</string-array>   
+		<string-array name="SMTStick_Parity">
+	    <item >无校验 </item>
+	    <item >奇校验</item>
+	    <item >偶校验</item>
+	    <item >标记</item>
+	    <item >空格</item>
+	</string-array> 
+	
+	<string-array name="SMTStick_tty">
+	    <item >COM1</item>
+	    <item >COM2</item>
+	    <item >COM3</item>
+	</string-array>
+	<string-array name="Pallet_out">
+	    <item >栈板</item>
+	    <item >箱号</item>
+	</string-array>
+	<string-array name="SMTStick_bit">
+		<item >2400</item>
+		<item >4800</item>
+	    <item >9600</item>
+	    <item >19200</item>
+	    <item >38400</item>
+	    <item >57600</item>
+	    <item >115200</item>
+	    <item >230400</item>
+	    <item >460800</item>
+	    <item >921600</item>
+	</string-array>
+		<string-array name="SMTFirstScanPCBType">
+		<item >A</item>
+		<item >B</item>
+	    <item >阴阳板</item>
+ 	</string-array>
+ 			<string-array name="MaterialRemovedorNot">
+	    <item >未卸料</item>
+	    <item >已卸料</item>
+	    <item >全部</item>
+ 	</string-array>
+		<string-array name="SMTFirstScanPCBQuantity">
+		<item >1</item>
+		<item >2</item>
+	    <item >3</item>
+	    <item >4</item>
+		<item >5</item>
+	    <item >6</item>
+		<item >7</item>
+		<item >8</item>
+	    <item >9</item>
+	    <item >10</item>
+		<item >11</item>
+	    <item >12</item>
+	    <item >13</item>
+		<item >14</item>
+	    <item >15</item>
+	    <item >16</item>
+		<item >17</item>
+	    <item >18</item>
+		<item >19</item>
+		<item >20</item>
+	    <item >21</item>
+	    <item >22</item>
+		<item >23</item>
+	    <item >24</item>	
+	    <item >25</item>
+		<item >26</item>
+	    <item >27</item>
+	    <item >28</item>
+		<item >29</item>
+	    <item >30</item>
+		<item >31</item>
+		<item >32</item>
+	    <item >33</item>
+	    <item >34</item>
+		<item >35</item>
+	    <item >36</item>	    
+	    </string-array>
+	    
+	<string-array name="SMTStick_warn_time">
+	    <item >01</item>
+	    <item >02</item>
+	    <item >03</item>
+	    <item >04</item>
+	    <item >05</item>
+	    <item >08</item>
+	    <item >10</item>
+	</string-array>
+	
+	
+	
+	<string-array name="SMTJIT_stock">
+	    <item >原仓别</item>
+	    <item >029 生产中心客供料仓</item>
+	    <item >040 试产仓</item>
+	    <item >061 OEM 客供超损仓</item>
+	</string-array>
+	
+	<string-array name="SMTSHORTNAME">
+		<item >S01</item>
+		<item >S02</item>
+	    <item >S03</item>
+	    <item >S04</item>
+		<item >S05</item>
+	    <item >S06</item>
+		<item >S07</item>
+		<item >S08</item>
+	    <item >S09</item>
+	    <item >S10</item>
+		<item >S11</item>
+	    <item >S12</item>
+	    <item >S13</item>
+		<item >S14</item>
+	    <item >S15</item>
+	    <item >S16</item>
+		<item >S17</item>
+	    <item >S18</item>
+		<item >S19</item>
+		<item >S20</item>
+	    <item >S21</item>
+	    <item >S22</item>
+		<item >S23</item>
+	    <item >S24</item>	
+	    <item >S25</item>
+		<item >S26</item>
+	    <item >S27</item>
+	    <item >S28</item>
+		<item >S29</item>
+	    <item >S30</item>
+		<item >S31</item>
+		<item >S32</item>
+	    <item >S33</item>
+	    <item >S34</item>
+		<item >S35</item>
+	    <item >S36</item>	  
+	    <item >S37</item>	
+	    <item >S38</item>	
+	    <item >S39</item>	
+	    <item >S40</item>	  
+	    </string-array>
+	    
+	   <string-array name="smtpeoplescan_banci">
+	    <item >白班</item>
+	    <item >夜班</item>
+	    <item >白夜</item>
+	</string-array>
+	
+	    <string-array name="smtpeoplescan_zhiwei">
+	    <item >组员</item>
+	    <item >组长</item>
+	    <item >工程设备</item>
+	      <item >工程工艺</item>
+	      <item >IPQC</item>
+	</string-array>
+	
+	    
+	    <string-array name="WORKCENTERNAME">
+		<item >1B-2FA-L01</item>
+		<item >1B-2FA-L02</item>
+	    <item >1B-2FA-L03</item>
+	    <item >1B-2FA-L04</item>
+		<item >1B-2FA-L05</item>
+	    <item >1B-2FA-L06</item>
+		<item >1B-2FA-L07</item>
+		<item >1B-2FA-L08</item>
+	    <item >1B-2FA-L09</item>
+	    <item >1B-2FA-L10</item>
+		<item >1B-2FA-L11</item>
+	    <item >1B-2FA-L12</item>
+	    <item >1B-2FA-L13</item>
+		<item >1B-2FA-L14</item>
+	    <item >1B-2FA-L15</item>
+	    <item >1B-2FA-L16</item>
+		<item >1B-2FA-L17</item>
+	    <item >1B-2FA-L18</item>
+		<item >1B-2FA-L19</item>
+		<item >1B-2FA-L20</item>
+	    <item >1B-2FA-L21</item>
+	    <item >1B-2FA-L22</item>
+		<item >1B-2FA-L23</item>
+	    <item >1B-2FA-L24</item>	
+	    <item >1B-2FA-L25</item>
+		<item >1B-2FA-L26</item>
+	    <item >1B-2FB-L27</item>
+	    <item >1B-2FB-L28</item>
+		<item >1B-2FB-L29</item>
+	    <item >1B-2FB-L30</item>
+		<item >1B-2FB-L31</item>
+		<item >1B-2FB-L32</item>
+	    <item >1B-2FB-L33</item>
+	    <item >1B-2FB-L34</item>
+		<item >1B-2FB-L35</item>
+	    <item >1B-2FB-L36</item>	  
+	    <item >1B-2FB-L37</item>	
+	    <item >1B-2FB-L38</item>	
+	    <item >1B-2FB-L39</item>	
+	    <item >1B-2FB-L40</item>	  
+	    </string-array>
+	    
+</resources>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context=".activity.CheckMoNamesActivity" 
+    android:background="@color/lightblue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@drawable/corners_bg_title">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            
+           
+            android:src="@drawable/logo3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_vertical|center_horizontal"
+            android:text="脉冲焊接机参数配置"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+            android:textSize="60sp"
+            android:textStyle="normal|bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" 
+        android:background="@color/lightblue"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp" 
+            android:layout_marginTop="10dp"
+            
+            android:background="@drawable/corners_bg">
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corners_bg"
+                android:layout_margin="10dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="加热时间设定（10ms）"
+                    android:textColor="@color/red" 
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/hanjieji_configtoplc_jiareedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corners_bg"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="吹气冷却时间（10ms）"
+                    android:textColor="@color/red" 
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/hanjieji_configtoplc_lenqueedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corners_bg"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:text="加热超时设定（10ms）"
+                    android:gravity="center"
+                    android:textColor="@color/red" 
+                    />
+
+                <EditText
+                    android:id="@+id/hanjieji_configtoplc_jiarechaoshiedit"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:singleLine="true"
+                    android:selectAllOnFocus="true"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+                </LinearLayout>
+               
+           
+
+                <Button
+                    android:id="@+id/hanjieji_configtoplc_okbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:text="OK!参数配置写入!" 
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/green"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    >
+                </Button>
+
+                <TextView
+                    android:layout_margin="10dp"
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="说明：请设定好参数，传到单片机!\n1、时间单位为10ms，最长不能超过4位\n2、设置完成点击按钮进行提交\n3、如需要查询单片机内设置的参数信息，请点击查询按钮"/>
+            
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" 
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/corners_bg"
+            >
+
+            <EditText
+                android:id="@+id/hanjieji_configtoplc_editscan"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:enabled="false"
+                android:gravity="top"
+                android:textSize="15sp" />
+              <Button
+                    android:id="@+id/hanjieji_configtoplc_selectbutton"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:text="查询设置到机器的参数" 
+                    android:textColor="@color/green"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    >
+                </Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

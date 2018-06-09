@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="fill_parent" android:layout_height="fill_parent"
+    		  android:orientation="vertical" >
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		  	  android:orientation="vertical" style="@style/style_1">
+        	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	    	  android:text="@string/batnum" android:textSize="14dp"/>
+        	<EditText android:layout_width="fill_parent"  android:layout_height="wrap_content"
+        	    	  android:layout_marginTop="3dp"  android:textSize="12dp" 
+        	    	  android:singleLine="true"  android:id="@+id/edt_batnum"/>
+    	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+    	              android:orientation="horizontal" android:layout_marginTop="8dp">
+        	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+        	    	  android:text="@string/adjust_amount" android:textSize="14dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	     	    	  style="@style/lab_plusreduce_style" 
+        	    	  android:text="@string/plus" android:id="@+id/labPlus"/>
+	     	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+	     	    	  style="@style/lab_plusreduce_style"
+        	    	  android:text="@string/reduce" android:id="@+id/labReduce"/>
+    	</LinearLayout> 
+    	<EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+    	          android:layout_marginTop="8dp"  android:inputType="numberDecimal"
+    	          android:singleLine="true"
+    	          android:textSize="12dp" android:id="@+id/edt_quantity_adjust"/>
+    	<include layout="@layout/common_btngroup_1" android:id="@+id/btnGroups"/>
+    </LinearLayout>
+    <include layout="@layout/common_edt_operatedetails" android:id="@+id/common_edtView_operateDetails"/>
+</LinearLayout>

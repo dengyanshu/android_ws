@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/style_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/recieve_good_oodnum"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_reciegood_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="仓库"
+                android:textSize="14dp" />
+
+           <Spinner
+               android:id="@+id/Spinner_storage_locaction"
+               android:layout_width="fill_parent"
+               android:layout_height="50dp"
+               android:layout_marginLeft="8dp"
+               android:singleLine="true"
+               android:textSize="14dp" />
+ 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:text="@string/scan_outbox_packNum"
+                android:textSize="14dp" />
+
+          <EditText
+                android:id="@+id/edt_outbox_packNum"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" />
+          
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/btnGroups"
+        layout="@layout/common_btngroup_1" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="60dp"
+        android:background="@color/puce"
+        android:text="@string/system_details"
+        android:textSize="16dp" />
+<!--     <include layout="@layout/common_edt_operatedetails" android:id="@+id/common_edtView_operateDetails"/> -->
+
+    <EditText
+        android:id="@+id/edt_sysdetail"
+        android:layout_width="306dp"
+        android:layout_height="fill_parent"
+        android:background="@color/black"
+        android:editable="false"
+        android:gravity="top"
+        android:minLines="17"
+        android:padding="5px"
+        android:scrollbars="vertical"
+        android:singleLine="false"
+        android:textColor="@color/red"
+        android:textSize="15dp" />
+
+</LinearLayout>

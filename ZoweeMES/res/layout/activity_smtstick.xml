@@ -1,0 +1,548 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightskyblue"
+    android:keepScreenOn="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".activity_smtstick" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="520dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+          
+            >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.16"
+                android:src="@drawable/logo3" />
+
+            <LinearLayout
+                android:id="@+id/SMTStick_layout_plc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/Text_tty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="串口号"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/magenta" />
+
+                    <TextView
+                        android:id="@+id/textView_bit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="波特率"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/magenta" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp" >
+
+                    <TextView
+                        android:id="@+id/textView_plc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.50"
+                        android:text="接驳台"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/deeppink" />
+
+                    <Spinner
+                        android:id="@+id/spinner_tty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.66" />
+
+                    <Spinner
+                        android:id="@+id/spinner_baudrate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.64" />
+
+                    <Spinner
+                        android:id="@+id/Spinner_PLC_PARITY"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.66" />
+
+                    <CheckBox
+                        android:id="@+id/checkB_labelorder"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.67"
+                        android:checked="true"
+                        android:text="升序条码"
+                        android:textColor="@color/magenta" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" >
+
+                    <CheckBox
+                        android:id="@+id/checkBox_warn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.41"
+                        android:checked="true"
+                        android:enabled="false"
+                        android:gravity="center_vertical"
+                        android:text="警报"
+                        android:textColor="@color/magenta" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox_hand"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.54"
+                        android:hint="@color/green"
+                        android:text="人工干预"
+                        android:textColor="@color/green" />
+
+                    <CheckBox
+                        android:id="@+id/checkBox_PCBPanellabel"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.56"
+                        android:text="板边条码"
+                        android:textColor="@color/crimson" />
+
+                    <TextView
+                        android:id="@+id/textView_warntime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_weight="0.40"
+                        android:text="警报时长:"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/green" />
+
+                    <Spinner
+                        android:id="@+id/spinner_warntime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.33" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SMTStick_layout_A"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView_A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.80"
+                        android:text="A 轨"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/textView_A_pcbside"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.20"
+                        android:text="贴片面"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/textView_A_COM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.32"
+                        android:text="串口号"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/textV_A_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.28"
+                        android:text="上-波特率"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/blue" />
+
+                    <TextView
+                        android:id="@+id/textV_A_textV_B_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.12"
+                        android:text="已贴数量"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/blue" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_weight="1" >
+
+                    <CheckBox
+                        android:id="@+id/checkBox_A"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.40"
+                        android:checked="true"
+                        android:duplicateParentState="false"
+                        android:text="上扫描头"
+                        android:textColor="@color/green" />
+
+                    <Spinner
+                        android:id="@+id/spinner_A_PCBSide"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.27" />
+
+                    <Spinner
+                        android:id="@+id/spinner_A1_tty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.36" />
+
+                    <Spinner
+                        android:id="@+id/spinner_A1_baudrate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.39" />
+
+                    <Spinner
+                        android:id="@+id/spinner_A2_baudrate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.39"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/Edit_A_ScannedQty"
+                        android:layout_width="94dp"
+                        android:layout_height="match_parent"
+                        android:autoText="false"
+                        android:contentDescription="@color/green"
+                        android:editable="false"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="A轨"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SMTStick_layout_B"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.8"
+                        android:text="B 轨"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/magenta" />
+
+                    <TextView
+                        android:id="@+id/textView_A_pcbside"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.20"
+                        android:text="贴片面"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/magenta" />
+
+                    <TextView
+                        android:id="@+id/textView_B_COM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.32"
+                        android:text="串口号"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/magenta" />
+
+                    <TextView
+                        android:id="@+id/textV_B_rate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.28"
+                        android:text="上-波特率"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/magenta" />
+
+                    <TextView
+                        android:id="@+id/textV_B_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.12"
+                        android:text="已贴数量"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/magenta" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="10dp" >
+
+                    <CheckBox
+                        android:id="@+id/checkBox_B"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.40"
+                        android:checked="true"
+                        android:text="上扫描头"
+                        android:textColor="@color/green" />
+
+                    <Spinner
+                        android:id="@+id/spinner_B_PCBSide"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.27" />
+
+                    <Spinner
+                        android:id="@+id/spinner_B1_tty"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.36" />
+
+                    <Spinner
+                        android:id="@+id/spinner_B1_baudrate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.39" />
+
+                    <Spinner
+                        android:id="@+id/spinner_B2_baudrate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.39"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:id="@+id/Edit_B_ScannedQty"
+                        android:layout_width="94dp"
+                        android:layout_height="match_parent"
+                        android:autoText="false"
+                        android:contentDescription="@color/green"
+                        android:editable="false"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:hint="B轨"
+                        android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/SMTStick_Common"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textV_OnePCBQty"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.01"
+                        android:text="连板数量"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/crimson" />
+
+                    <TextView
+                        android:id="@+id/textV_ScanType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.04"
+                        android:text="执行类别"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/crimson" />
+
+                    <TextView
+                        android:id="@+id/textV_latelyScannedLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="0.04"
+                        android:text="前PCB板条码"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/darkorange" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_marginBottom="10dp" >
+
+                    <Spinner
+                        android:id="@+id/spinner_onePCBQTY"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.06" />
+
+                    <Spinner
+                        android:id="@+id/spinner_ScanType"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.12" />
+
+                    <EditText
+                        android:id="@+id/Edit_latelyScannedLabel"
+                        android:layout_width="109dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.15"
+                        android:autoText="false"
+                        android:contentDescription="@color/green"
+                        android:editable="false"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:singleLine="true" />
+                </LinearLayout>
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    >
+                    <CheckBox
+                        android:id="@+id/checkBox_duli"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.60"
+                        android:duplicateParentState="false"
+                        android:textAppearance="@android:style/TextAppearance"
+                        android:text="板边连板扣料独立模式"
+                        android:textSize="20sp"
+                        android:textStyle="bold|italic"
+                        android:textColor="@color/red" />
+                       <Button 
+                            android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.40"
+                           android:onClick="testduli"
+                           android:text="test"
+                           android:visibility="invisible"
+                           />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.01" >
+
+                <Button
+                    android:id="@+id/Button_test"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="测试扫描头"
+                    android:textColor="@color/magenta" />
+
+                <Button
+                    android:id="@+id/Button_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:text="确认"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical" 
+            android:background="@drawable/corners_bg"
+            android:layout_marginLeft="5dp"
+            >
+
+            <CheckBox
+                android:id="@+id/check_showInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="显示所有信息" />
+
+            <EditText
+                android:id="@+id/Edit_SMTStickInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:gravity="top"
+                android:inputType="text|textMultiLine" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

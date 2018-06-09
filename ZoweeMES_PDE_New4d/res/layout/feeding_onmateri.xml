@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/thin_back"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/style_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lab_workorder"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/work_order"
+                android:textSize="14dp" />
+
+            <Spinner
+                android:id="@+id/spin_workorder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lab_workorder" />
+        
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                 android:id="@+id/feeding_onmateri_moselecttv"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="工单筛选"
+                android:textSize="14dp" 
+                android:layout_marginLeft="15dp"/>
+
+            <EditText
+                android:id="@+id/feeding_onmateri_moselectedit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/feeding_onmateri_moselecttv"
+                android:singleLine="true"
+                android:hint="输入工单包含的任意字符"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/lab_productline"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/product_line"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_productline"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lab_productline"
+                android:singleLine="true"
+                android:enabled="false"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/lab_machine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/edt_productline"
+                android:singleLine="true"
+                android:text="@string/machine"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_machine"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/lab_machine"
+                android:singleLine="true"
+                android:enabled="false"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/btn_cancel_stalotsn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@id/edt_machine"
+                android:text="清空"
+                android:textSize="14dp" />
+
+        </RelativeLayout>
+   
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lab_PalletOutRoom"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="槽位编号"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_slotScan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lab_PalletOutRoom"
+                android:singleLine="true"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+        
+        
+             <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lab_PalletOutRoom4d"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="飞达编号"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_feida"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/lab_PalletOutRoom4d"
+                android:singleLine="true"
+                android:textSize="15dp" />
+              
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/lab_operatescan"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="@string/meterial_batnum"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_materialScan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/lab_operatescan"
+                android:singleLine="true"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="蓝牙测试"
+            android:onClick="clickbt" />
+        
+        <include
+            android:id="@+id/btnGroups"
+            android:layout_width="146dp"
+            layout="@layout/common_btngroup_1" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/common_edtView_operateDetails"
+        layout="@layout/common_edt_operatedetails" />
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@drawable/main"
+    android:orientation="vertical" >
+
+    <ScrollView
+  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp" 
+                android:layout_marginTop="13dp">
+                
+                <TextView
+                    android:id="@+id/lab_file5_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/count"
+                    android:gravity="center"
+                    android:text="脉冲焊接配置"
+                    android:textColor="@color/red" />
+                 <TextView
+                    android:id="@+id/lab_file5_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_file5_1"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/count"
+                    android:gravity="center"
+                    android:text="脉冲焊接波形"
+                    android:textColor="@color/red" />
+                 <TextView
+                    android:id="@+id/lab_file5_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_file5_2"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/count"
+                    android:gravity="center"
+                    android:text="脉冲焊接机(新)"
+                    android:textColor="@color/red" />
+                 <TextView
+                    android:id="@+id/lab_file5_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_file5_3"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/count"
+                    android:gravity="center"
+                    android:text="上下岗刷卡机"
+                    android:textColor="@color/red" />
+                 
+               
+               
+                      
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

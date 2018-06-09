@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 android:gravity="center"
+                 style="@style/textsize4d"
+                 android:layout_width="75dp"
+                 android:layout_height="match_parent"
+                 android:text="线别:" />
+
+        <Spinner
+            android:id="@+id/smtpeoplescan_line"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true"
+            android:entries="@array/WORKCENTERNAME"
+           />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 android:gravity="center"
+                 style="@style/textsize4d"
+                 android:layout_width="75dp"
+                 android:layout_height="match_parent"
+                 android:text="班次:" />
+
+        <Spinner
+            
+            android:id="@+id/smtpeoplescan_bancispinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="0dp"
+            android:entries="@array/smtpeoplescan_banci"
+            
+             />
+            
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+             <TextView
+                 android:gravity="center"
+                 style="@style/textsize4d"
+                 android:layout_width="75dp"
+                 android:layout_height="match_parent"
+                 android:text="锡膏:" />
+
+        <EditText
+            android:id="@+id/smtpeoplescan_tino"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true"
+           />
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 android:gravity="center"
+                 style="@style/textsize4d"
+                 android:layout_width="75dp"
+                 android:layout_height="match_parent"
+                 android:text="职位:" />
+
+        <Spinner
+            
+            android:id="@+id/smtpeoplescan_zhiweispinner"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="0dp"
+             android:entries="@array/smtpeoplescan_zhiwei"
+            
+             />
+            
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+             <TextView
+                 android:gravity="center"
+                 style="@style/textsize4d"
+                 android:layout_width="75dp"
+                 android:layout_height="match_parent"
+                 android:text="组员:" />
+
+        <EditText
+            android:id="@+id/smtpeoplescan_people"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="0dp"
+            android:singleLine="true"
+           />
+            
+        </LinearLayout>
+       
+    </LinearLayout>
+  
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+         android:layout_height="wrap_content"        
+        
+        
+        >
+        <Button 
+            android:onClick="clickme"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24dp"
+            android:text="SMT在岗人员扫描" 
+            android:textColor="@color/blue"
+            android:background="@drawable/button_bg"
+            android:layout_margin="5dp"
+            android:enabled="false"
+            />
+     </LinearLayout>
+     
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+           <EditText
+                android:id="@+id/smtjitchaoling_editscan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:gravity="top"
+                android:textSize="15sp" 
+                android:focusable="false"/>
+        
+    </LinearLayout>
+    </LinearLayout>
+        
+     

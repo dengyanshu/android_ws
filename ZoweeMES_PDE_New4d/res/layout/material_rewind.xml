@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/thin_back"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/check_deliNum_style1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/material_rewind"
+        android:textColor="@color/magenta"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        style="@style/style_3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                style="@style/check_completenos_style1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/recieve_good_oodnum"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_reciegood_num"
+                style="@style/check_completenos_style1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:enabled="false"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textColor="@color/darkblue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                style="@style/check_completenos_style1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/material_barcoade"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_material_barcoade"
+                style="@style/check_completenos_style1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:maxLines="1"
+                android:textColor="@color/darkblue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                style="@style/check_completenos_style1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/order_num"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_order_num"
+                style="@style/check_completenos_style1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:enabled="false"
+                android:focusable="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/darkblue" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent" >
+
+            <TextView
+                style="@style/check_completenos_style1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="数量"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_order_quantity"
+                style="@style/check_completenos_style1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:ems="10"
+                android:enabled="false"
+                android:focusable="false"
+                android:maxLines="1"
+                android:textColor="@color/darkblue" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center" >
+
+            <Button
+                android:id="@+id/btn_reciegood_Scan"
+                style="@style/btn_comBtnGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 扫描 " />
+            
+            <Button
+                android:id="@+id/btn_reciegood_num"
+                style="@style/btn_comBtnGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pro_reciegood_num" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                style="@style/btn_comBtnGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="@string/submit" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ScrollView
+            style="@style/check_completenos_style2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <TextView
+                android:id="@+id/lab_metrewin_detail"
+                style="@style/edt_operateDetails"
+                android:layout_width="match_parent"
+                android:layout_height="162dp"
+                android:background="@color/black"
+                android:inputType="textMultiLine"
+                android:textColor="@color/yellow" />
+
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

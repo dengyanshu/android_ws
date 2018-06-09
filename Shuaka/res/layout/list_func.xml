@@ -1,0 +1,959 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    android:orientation="vertical" >
+    
+    
+    <!-- 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+     -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp" >
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp" >
+
+                <TextView
+                    android:id="@+id/lab_file1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/file"
+                    android:gravity="center"
+                    android:text="松岗四楼"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/lab_file2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_file1"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/file"
+                    android:gravity="center"
+                    android:text="天津程序"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/lab_file3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_file2"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/file"
+                    android:gravity="center"
+                    android:text="联想平板"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/lab_file4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_file3"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/file"
+                    android:gravity="center"
+                    android:text="海尔平板"
+                    android:textColor="@color/red" />
+                <TextView
+                    android:id="@+id/lab_file5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_file4"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/file"
+                    android:gravity="center"
+                    android:text="卓翼共用"
+                    android:textColor="@color/red" />
+                <TextView
+                    android:id="@+id/lab_file6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_file5"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/file"
+                    android:gravity="center"
+                    android:text="待定"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="13dp" >
+                 <TextView
+                    android:id="@+id/lab_MobileSMTTODIP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/lab_Dip_material_start"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/fascan"
+                    android:gravity="center"
+                    android:text="手机-DIP"
+                    android:textColor="@color/red" />
+                <TextView
+                    android:id="@+id/lab_StartDIPOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_MobileSMTTODIP"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/shouscan"
+                    android:gravity="center"
+                    android:text="委外-DIP"
+                    android:textColor="@color/red" />
+                 <TextView
+                    android:id="@+id/lab_SMTToDIP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_StartDIPOut"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/problem"
+                    android:gravity="center"
+                    android:text="@string/text_StartSMTToDIP"
+                    android:textColor="@color/red" />
+                
+                <TextView
+                    android:id="@+id/lab_DIPStartDip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_SMTToDIP"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/problem"
+                    
+                    android:gravity="center"
+                    android:text="@string/text_StartDIP"
+                    android:textColor="@color/red" />
+                
+                 <TextView
+                    android:id="@+id/lab_SMTFirstScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_DIPStartDip"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/shouscan"
+                    android:gravity="center" 
+                    android:text="@string/text_SMTFirstScan"
+                    android:textColor="@color/red" />
+                
+
+               <TextView
+                    android:id="@+id/lab_SMTFirstScan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_SMTFirstScan"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/shouscan"
+                    android:gravity="center"
+                    android:hint="oppo"
+                    android:text="上线扫描2"
+                    android:textColor="@color/red" />
+
+               
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="13dp" >
+
+                
+              <TextView
+                    android:id="@+id/lab_SMTStick_Old"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/shouscan"
+                    android:gravity="center"
+                    android:text="普通贴片"
+                    android:textColor="@color/red" />
+                <TextView
+                    android:id="@+id/lab_SMTeyeCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_SMTStick_Old"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/search"
+                    android:gravity="center"
+                    android:text="SMT目检"
+                    android:textColor="@color/red" />
+                
+
+                <TextView
+                    android:id="@+id/lab_SMTLade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_SMTeyeCheck"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/tracking"
+                    android:gravity="center"
+                    android:text="@string/text_SMTLade"
+                    android:textColor="@color/red" />
+
+             
+                 <TextView
+                      android:id="@+id/lab_smtprinting"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="95dp"
+                      android:layout_toRightOf="@+id/lab_SMTLade"
+                      android:drawablePadding="3dp"
+                      android:drawableTop="@drawable/search"
+                      android:gravity="center"
+                      android:text="印刷扫描"
+                      android:textColor="@color/red" />
+                
+                 <TextView
+                      android:id="@+id/lab_smttp_new"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="95dp"
+                      android:layout_toRightOf="@+id/lab_smtprinting"
+                      android:drawablePadding="3dp"
+                      android:drawableTop="@drawable/search"
+                      android:gravity="center"
+                      android:text="SMT贴片3"
+                      android:textColor="@color/red" />
+                  
+               <TextView
+                      android:id="@+id/lab_smtladecarandtiepian"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="95dp"
+                      android:layout_toRightOf="@+id/lab_smttp_new"
+                      android:drawablePadding="3dp"
+                      android:drawableTop="@drawable/search"
+                      android:gravity="center"
+                      android:text="装车扣料"
+                      android:textColor="@color/red" />
+                   
+               
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="13dp" >
+                 <TextView
+                      android:id="@+id/lab_SMTFirstScanBB"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="8dp"
+                      android:drawablePadding="3dp"
+                      android:drawableTop="@drawable/search"
+                      android:gravity="center"
+                      android:text="板边上线"
+                      android:textColor="@color/red" />
+                    <TextView
+                    android:id="@+id/lab_SMTStick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_SMTFirstScanBB"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/fascan"
+                    android:gravity="center"
+                    android:text="板边贴片"
+                    android:textColor="@color/red" />
+
+               
+                
+                   <TextView
+                        android:id="@+id/lab_smtfvmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="95dp"
+                        android:layout_toRightOf="@+id/lab_SMTStick"
+                        android:drawablePadding="3dp"
+                        android:drawableTop="@drawable/fascan"
+                        android:gravity="center"
+                        android:text="板边目检"
+                        android:textColor="@color/red"
+                        />
+                     <TextView
+                        android:id="@+id/lab_sntocar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="95dp"
+                        android:layout_toRightOf="@+id/lab_smtfvmi"
+                        android:drawablePadding="3dp"
+                        android:drawableTop="@drawable/fascan"
+                        android:gravity="center"
+                        android:text="板边装车"
+                        android:textColor="@color/red"
+                        />
+                
+                <TextView
+                      android:id="@+id/lab_smttp_manual"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="95dp"
+                      android:layout_toRightOf="@+id/lab_sntocar"
+                      android:drawablePadding="3dp"
+                      android:drawableTop="@drawable/search"
+                      android:gravity="center"
+                      android:text="人工贴片"
+                      android:textColor="@color/red" />
+                
+                
+                <TextView
+                      android:id="@+id/lab_smttp_common"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="95dp"
+                      android:layout_toRightOf="@+id/lab_smttp_manual"
+                      android:drawablePadding="3dp"
+                      android:drawableTop="@drawable/search"
+                      android:gravity="center"
+                      android:text="通用贴片"
+                      android:textColor="@color/red" />
+                  
+                
+
+              
+            </RelativeLayout>
+          
+           <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="13dp" >
+                
+                  <!-- 为E5产品做的修改原始程序为 半成品目检 成品目检装车   -->
+                    <TextView
+                      android:id="@+id/lab_smtlade3"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                       android:layout_marginLeft="8dp"
+                      android:drawablePadding="3dp"
+                      android:drawableTop="@drawable/search"
+                      android:gravity="center"
+                      android:text="E5目检装车"
+                      android:textColor="@color/red" 
+                     />
+                    <TextView
+                    android:id="@+id/lab_smtxg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="85dp"
+                    android:layout_toRightOf="@+id/lab_smtlade3"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/fascan"
+                    android:gravity="center"
+                    android:text="二次锡膏"
+                    android:textColor="@color/red" />
+                
+
+              
+            </RelativeLayout>
+           
+           
+            
+            
+           
+           
+            
+            <!-- 如下部分功能暂时隐藏，需要时开启 -->
+             <!-- 入库扫描 数量调整  FIFO查询 物料收料 拆分出库  批号查询-->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp" 
+                android:layout_marginTop="13dp"
+                android:visibility="gone">
+             
+                <TextView
+                    android:id="@+id/lab_storageScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/area"
+                    android:gravity="center"
+                    android:text="@string/first_tab_txt"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/lab_quantityAdjust"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_storageScan"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/pai"
+                    android:gravity="center"
+                    android:text="@string/fourth_tab_txt"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/lab_fifoScan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_quantityAdjust"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/search"
+                    android:gravity="center"
+                    android:text="@string/second_tab_txt"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/lab_materialRewind"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_fifoScan"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/chaiscan"
+                    android:gravity="center"
+                    android:text="@string/material_rewind"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/lab_splitStore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_materialRewind"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/count"
+                    android:gravity="center"
+                    android:text="@string/third_tab_txt"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/lab_batNum_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_splitStore"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/search"
+                    android:gravity="center"
+                    android:text="@string/fiftg_tab_txt"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+              <!-- 备料操作 物料盘点  上料对料  卡板发货 卡板出库  卡板入仓-->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="13dp" 
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/lab_prepareOperate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/chaiscan"
+                    android:gravity="center"
+                    android:text="@string/prepare_operate"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/lab_materiInvento"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_prepareOperate"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/pai"
+                    android:gravity="center"
+                    android:text="@string/material_inventory"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/lab_feeding_onMaterial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_materiInvento"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/chaiscan"
+                    android:gravity="center"
+                    android:text="@string/feeding_onmaterial"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/lab_finish_delivCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_feeding_onMaterial"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/shouscan"
+                    android:gravity="center"
+                    android:text="@string/finish_delivery_card"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/lab_finishOut_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_finish_delivCard"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/fascan"
+                    android:gravity="center"
+                    android:text="@string/finished_out_card"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/lab_fini_wareHouCard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_finishOut_card"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/search"
+                    android:gravity="center"
+                    android:text="@string/finished_warehouse_card"
+                    android:textColor="@color/red" />
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/lab_finiOut_catton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_finiDeli_catton"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/fascan"
+                    android:gravity="center"
+                    android:text="@string/finished_out_catton"
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+             <TextView
+                    android:id="@+id/lab_finiDeli_catton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/shouscan"
+                    android:gravity="center"
+                     android:visibility="gone"
+                    android:text="@string/finish_delivery_catton"
+                    android:textColor="@color/red" />
+             <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="13dp" >
+                 <TextView
+                    android:id="@+id/lab_Dip_material_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/search"
+                    android:gravity="center"
+                    android:text="扣料启动"
+                    android:textColor="@color/red" 
+                    android:visibility="gone"/>
+                 <!--查料站表  -->
+                  <TextView
+                    android:id="@+id/lab_chemater_statab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_MobileSMTTODIP"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/tracking"
+                    android:gravity="center"
+                    android:text="@string/chemater_statab"
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+                  <!--卸料换卷  -->
+                   <TextView
+                    android:id="@+id/lab_removeMateri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_chemater_statab"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/problem"
+                    android:gravity="center"
+                    android:text="@string/remove_materi"
+                    android:textColor="@color/red"
+                    android:visibility="gone" />
+                   <!--SMT上料  -->
+                  <TextView
+                    android:id="@+id/lab_SMTScanMaterial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/search"
+                    android:gravity="center"
+                    android:text="@string/text_SMTScanMaterial"
+                    android:textColor="@color/red" 
+                    android:visibility="gone"/>
+                  <!--BOX-SN  -->
+                  <TextView
+                    android:id="@+id/lab_TjBoxLotSNCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_SMTStick_Old"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/fascan"
+                    android:gravity="center"
+                    android:text="BOX-SN"
+                    android:textColor="@color/red" 
+                    android:visibility="gone"/>
+                  
+                    <TextView
+                    android:id="@+id/lab_TJeyscheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_SMTFirstScan2"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/shouscan"
+                    android:gravity="center"
+                    android:hint="oppo"
+                    android:text="TJ-目检"
+                    android:textColor="@color/red" 
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/lab_TJOQCCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_TJeyscheck"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/shouscan"
+                    android:gravity="center"
+                    android:hint="oppo"
+                    android:text="TJ-OQC"
+                    android:textColor="@color/red" 
+                    android:visibility="gone"/>
+                
+                
+                 <TextView
+                    android:id="@+id/lab_tino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="8dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/search"
+                    android:gravity="center"
+                    android:text="锡膏扫描"
+                    android:textColor="@color/red" 
+                    android:visibility="gone"/>
+                  
+                    <TextView
+                        android:id="@+id/lab_bindpcb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="93dp"
+                        android:layout_toRightOf="@+id/lab_tino"
+                        android:drawablePadding="3dp"
+                        android:drawableTop="@drawable/search"
+                        android:gravity="center"
+                        android:text="联板绑定"
+                        android:textColor="@color/red"
+                        android:visibility="gone" />
+                
+                   <TextView
+                        android:id="@+id/lab_lineqtyselect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="95dp"
+                        android:layout_toRightOf="@+id/lab_bindpcb"
+                        android:drawablePadding="3dp"
+                        android:drawableTop="@drawable/fascan"
+                        android:gravity="center"
+                        android:text="紫米线体"
+                        android:textColor="@color/red"
+                        android:visibility="gone"
+                        />
+                  
+                     <TextView
+                        android:id="@+id/lab_linesninput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="95dp"
+                        android:layout_toRightOf="@+id/lab_lineqtyselect"
+                        android:drawablePadding="3dp"
+                        android:drawableTop="@drawable/fascan"
+                        android:gravity="center"
+                        android:text="紫米-SN"
+                        android:textColor="@color/red"
+                        android:visibility="gone"
+                        />
+                     
+                      <TextView
+                        android:id="@+id/lab_fini_warHou_catton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="195dp"
+                        android:layout_toRightOf="@+id/lab_linesninput"
+                        android:drawablePadding="3dp"
+                        android:drawableTop="@drawable/fascan"
+                        android:gravity="center"
+                        android:text="@string/finished_warehouse_catton"
+                        android:textColor="@color/red"
+                        android:visibility="invisible"
+                        />
+                     <TextView
+                      android:id="@+id/lab_m8000cp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="95dp"
+                      android:layout_toRightOf="@+id/lab_lenovotocar"
+                      android:drawablePadding="3dp"
+                      android:drawableTop="@drawable/search"
+                      android:gravity="center"
+                      android:text="M8000_CP"
+                      android:textColor="@color/red" 
+                      android:visibility="gone"/>
+                   <TextView
+                      android:id="@+id/lab_signin"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="90dp"
+                      android:layout_toRightOf="@+id/lab_m8000cp"
+                      android:drawablePadding="3dp"
+                      android:drawableTop="@drawable/search"
+                      android:gravity="center"
+                      android:text="线头刷卡"
+                      android:textColor="@color/red" 
+                      android:visibility="gone"/>
+                   <!-- 上位机控制坐标  该方式已弃用 -->
+                    <TextView
+                      android:id="@+id/lab_smttp"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="95dp"
+                      android:layout_toRightOf="@+id/lab_signin"
+                      android:drawablePadding="3dp"
+                      android:drawableTop="@drawable/search"
+                      android:gravity="center"
+                      android:text="SMT贴片2"
+                      android:textColor="@color/red" 
+                      android:visibility="gone"/>
+                    
+                    
+                     <TextView
+                      android:id="@+id/lab_webservicetest"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="95dp"
+                      android:layout_toRightOf="@+id/lab_SMTFirstScanBB"
+                      android:drawablePadding="3dp"
+                      android:drawableTop="@drawable/search"
+                      android:gravity="center"
+                      android:text="web_delay"
+                      android:textColor="@color/red" 
+                      android:visibility="gone"/>
+                  
+                 
+              </RelativeLayout>  
+              
+              <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="13dp" 
+                android:visibility="gone">
+
+                  <TextView
+                      android:id="@+id/lab_tjzimiproduct"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="8dp"
+                      android:drawablePadding="3dp"
+                      android:drawableTop="@drawable/search"
+                      android:gravity="center"
+                      android:text="紫米产品"
+                      android:textColor="@color/red" 
+                      android:visibility="gone"/>
+
+                  <TextView
+                    android:id="@+id/lab_tjzimipower"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                     android:layout_toRightOf="@+id/lab_tjzimiproduct"
+                    android:drawableTop="@drawable/search"
+                    android:gravity="center"
+                    android:text="紫米电源"
+                    android:textColor="@color/red" 
+                    android:visibility="gone"/>
+                  <TextView
+                    android:id="@+id/lab_tjzimirepairin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_alignRight="@+id/lab_lineqtyselect"
+                    android:drawablePadding="3dp"
+                     android:layout_toRightOf="@+id/lab_tjzimipower"
+                    android:drawableTop="@drawable/search"
+                    android:gravity="center"
+                    android:text="紫米入库"
+                    android:textColor="@color/red" 
+                    android:visibility="gone"/>
+                  <TextView
+                    android:id="@+id/lab_tjzimirepairout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                      android:layout_toRightOf="@+id/lab_tjzimirepairin"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/search"
+                    android:gravity="center"
+                    android:text="紫米出库"
+                    android:textColor="@color/red" 
+                    android:visibility="gone"/>
+                     <TextView
+                    android:id="@+id/lab_SMTStorage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_SMTLade"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/problem"
+                    android:gravity="center"
+                    android:text="@string/text_SMTStorage"
+                    android:textColor="@color/red" 
+                    android:visibility="gone"/>
+                  
+                 
+                  <TextView
+                    android:id="@+id/lab_printtest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                      android:layout_toRightOf="@+id/lab_tjzimirepairout"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/search"
+                    android:gravity="center"
+                    android:text="MAC打印"
+                    android:textColor="@color/red" 
+                    android:visibility="gone"/>
+                  <TextView
+                    android:id="@+id/lab_lenovofvmi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="95dp"
+                      android:layout_toRightOf="@+id/lab_printtest"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/search"
+                    android:gravity="center"
+                    android:text="目检扣料"
+                    android:textColor="@color/red" 
+                    android:visibility="gone"/>
+                  
+                  
+                   <TextView
+                      android:id="@+id/lab_lenovotocar"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_alignParentTop="true"
+                      android:layout_marginLeft="8dp"
+                      android:drawablePadding="3dp"
+                      android:drawableTop="@drawable/search"
+                      android:gravity="center"
+                      android:text="芯片绑定"
+                      android:textColor="@color/red" 
+                      android:visibility="gone"/>
+                 
+                   
+           </RelativeLayout>
+             <!-- 如下部分功能暂时隐藏，需要时开启 -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

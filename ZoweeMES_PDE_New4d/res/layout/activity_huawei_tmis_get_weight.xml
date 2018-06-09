@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/dimgrey"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        style="@style/style_1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dimgrey"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="物料批号"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/edt_HwTmisCartonNumber"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" >
+
+          <Button
+                android:id="@+id/butt_HwTmisScan"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.23"
+                android:text="扫描" />
+            <Button
+                android:id="@+id/butt_HwTmisClear"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="0.23"
+                android:text="清除" />
+
+            
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/common_edtView_operateDetails"
+        android:layout_height="398dp"
+        layout="@layout/common_edt_operatedetails" />
+
+</LinearLayout>

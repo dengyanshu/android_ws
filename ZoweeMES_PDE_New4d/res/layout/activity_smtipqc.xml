@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightblue"
+    android:orientation="vertical"
+    android:showDividers="middle" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+           <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/smtipqc_motextview"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="工单"
+            android:textColor="@color/red"
+            android:textSize="14dp" />
+
+            <EditText
+            android:id="@+id/smtipqc_moedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:textSize="12dp" 
+            android:hint="输入批次号获取工单"/>
+             
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="车号"
+            android:textColor="@color/red"
+            android:textSize="14dp" />
+
+            <EditText
+            android:id="@+id/smtipqc_carsnedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:textSize="12dp" 
+            android:hint="输入车号"/>
+             
+         </LinearLayout>
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content" >
+
+            <TextView
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="装车数量"
+            android:textSize="14dp" 
+            android:textColor="@color/red"
+            android:layout_marginLeft="15dp"/>
+
+            <EditText
+            android:id="@+id/smtipqc_carnumedit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:singleLine="true"
+            android:textSize="12dp" 
+            android:enabled="false"
+            android:focusable="false"
+            />
+             
+         </LinearLayout>
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="抽检作业："
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:textSize="24dp" 
+            android:textStyle="italic|bold"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:text="SN "
+                android:textColor="@color/red"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/smtipqc_snedit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" 
+                >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="85dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-8dp"
+                android:text="不良代码"
+                android:textColor="@color/red"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/smtipqc_errorcodeedit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:singleLine="true"
+                android:textSize="12dp" >
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+     <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal" >
+         <Button 
+         android:id="@+id/smtipqc_okbutton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24dp"
+            android:text="整车通过!" 
+            android:textColor="@color/blue"
+            android:background="@drawable/button_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+         <Button 
+         android:id="@+id/smtipqc_failbutton"
+             android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+             android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="24dp"
+            android:text="整车批退!" 
+            android:textColor="@color/blue"
+            android:background="@drawable/button_bg"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            
+            />
+         
+      </LinearLayout>
+     
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/corners_bg"
+        android:orientation="vertical" >
+           <EditText
+                android:id="@+id/smtipqc_editscan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:gravity="top"
+                android:textSize="15sp" 
+                android:focusable="false"/>
+        
+    </LinearLayout>
+    
+
+    
+
+</LinearLayout>

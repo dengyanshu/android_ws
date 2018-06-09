@@ -1,0 +1,56 @@
+1��URLCONNECTION
+  URL url=new URL("www.baidu.com");
+  HttpURLConnection coon=(HttpURLConnection)url.openConnection()
+  coon.getInputStream
+  ���ڴ�����ȡ   Ȼ�󷵻�string
+  
+  �����internetȨ��
+  
+  
+  2��scrollview ֻ����һ���ӿؼ�
+  �������������Ҫ�����Ļ� �����ò��ְ���
+  
+  
+  3��android  ���̣߳�UI�̣߳�
+      4.0��  ���� ����Ҫ�ں�̨�߳�
+               ����UI  ����Ҫ��UI�̼߳����߳̽��в���
+               
+  4��handler����
+    ���̴߳���handler����  Ȼ�����߳���handler  ��what��ʾ��  ����message ���ݵ����̵߳�handler��handlerMessage
+    ��������
+     
+     ����д����
+            ���̴߳���handler����
+     private  Handler myHandler=new Handler(){
+                       ��д handlerMessage����
+     
+     }
+          ���߳��У�
+          Message.obtain(handler,what,object).sendTraget();
+     
+     
+     ----------------------------------------------------------
+     ���̴߳���handler���� ����дhandMessage()����
+     ���߳�  ��handler.post(runnable(){  ����handleMessage������
+     run(){
+          //����Ĵ����൱��handMessage()����  �˴������������߳�ִ��
+     }
+   })
+   ���ߵ��÷��� runOnUiThread()  �����������������һ��  ��� ��Ϣ���� ��Ҫwhat���� ����ʹ�ô�ͳд��
+       
+       
+       
+   5���ļ�����  /data/data/cn.yanshu/cache
+     ����Ӧ���½���һ��cacheĿ¼ �����ﱣ����ļ����Ա��û������  new  File(getcachedir(),"test.png");
+     ��ͼƬ ���浽test.png 
+     �ж��ļ��Ƿ���� �������ֱ��ʹ�� 
+     ���� ʹ��url.openConnection()��ȡconnection���� Ȼ���ȡinputstream   
+     
+     
+     
+   6��smartimageview
+    SmartImageView smartImageView=findviewbyit();
+         布局中:
+         <cn.yanshu.smartimageview>
+   
+     

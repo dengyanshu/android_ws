@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="2dp"
+    tools:context=".activity.CheckMoNamesActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:background="@drawable/corners_bg_title">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            
+           
+            android:src="@drawable/logo3" />
+
+        <TextView
+            android:id="@+id/shuaka_activitytitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_vertical|center_horizontal"
+            android:text="---上下岗刷卡---"
+            android:textColor="@color/black"
+            android:textColorLink="@color/black"
+            android:textSize="60sp"
+            android:textStyle="normal|bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:background="@color/lightblue">
+
+        <LinearLayout
+            android:layout_width="505dp"
+            android:layout_height="537dp"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:padding="0dp" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/corners_bg"
+                android:padding="5dp"
+                >
+               
+
+                    
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="线别："
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" 
+                        android:gravity="left|center"
+                        />
+                        <Spinner 
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/shuaka_linename"
+                            />
+                    </LinearLayout>
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="卡机："
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" 
+                        android:gravity="center"
+                        />
+                        <EditText 
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/shuaka_cardmachine"
+                            android:enabled="false"
+                            android:focusable="false"
+                            
+                            
+                            />
+                    </LinearLayout>
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="工单："
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" 
+                        android:gravity="left|center"
+                        />
+                        <Spinner 
+                            android:layout_width="300dp"
+                            android:layout_height="50dp"
+                            android:id="@+id/shuaka_moname"
+                            />
+                        <Button 
+                            android:onClick="shua"
+                            android:layout_width="match_parent"
+                             android:layout_height="50dp"
+                             android:text="点击刷新"
+                               android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" 
+                            
+                            />
+                    </LinearLayout>
+                    <LinearLayout 
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:text="制程："
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red" 
+                        android:gravity="left|center"
+                        />
+                        <Spinner 
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:id="@+id/shuaka_zhicheng"
+                            />
+                    </LinearLayout>
+                    
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/corners_bg"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                >
+                <LinearLayout 
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                    >
+                     <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:text="班次："
+                    android:gravity="center"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/red" 
+                    />
+                    <RadioGroup 
+                       android:layout_width="match_parent"
+                     android:layout_height="wrap_content" 
+                     android:orientation="horizontal" 
+                     android:id="@+id/shuaka_banci_radiogroup"                      
+                      >
+
+                        <RadioButton
+                             android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/shuaka_banci_radiobtn1"  
+                            android:text="白班" 
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/gold"
+                            />
+                        
+
+                        <RadioButton
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/shuaka_banci_radiobtn3"  
+                            android:textStyle="bold|italic"
+                            android:textColor="@color/gold"
+                            android:text="晚班" />
+
+                    </RadioGroup>
+                </LinearLayout>
+                <LinearLayout 
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                    >
+                      <TextView
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:text="上/下班："
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/red" 
+                    android:gravity="center"
+                    />
+                    <RadioGroup 
+                       android:layout_width="match_parent"
+                     android:layout_height="wrap_content" 
+                     android:orientation="horizontal"  
+                      android:id="@+id/shuaka_shanghuoxia_radiogroup"                        
+                      >
+                        <RadioButton 
+                          android:layout_width="0dp"
+                     android:layout_height="wrap_content" 
+                     android:layout_weight="1"
+                     android:text="上岗"
+                     android:id="@+id/shuaka_shanghuoxia_radiobtn1"  
+                        android:textStyle="bold|italic"
+                            android:textColor="@color/gold"
+                        />
+                        <RadioButton 
+                             android:layout_width="0dp"
+                     android:layout_height="wrap_content" 
+                     android:layout_weight="1"
+                         android:text="下岗"
+                         android:id="@+id/shuaka_shanghuoxia_radiobtn2"  
+                        android:textStyle="bold|italic"
+                            android:textColor="@color/gold"
+                        />
+                        
+                    </RadioGroup>
+                </LinearLayout>
+                
+              
+            </LinearLayout>
+             <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="10dp"
+                 android:paddingRight="25dp"
+                android:background="@drawable/corners_bg"
+               >
+
+               <Button
+                   android:id="@+id/textView1"
+                   android:layout_width="105dp"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentTop="true"
+                   android:gravity="center"
+                   android:onClick="onclick"
+                   android:text="排产天数:"
+                   android:textAppearance="?android:attr/textAppearanceMedium"
+                   android:textColor="@color/red" />
+
+                <SeekBar 
+                    android:id="@+id/shuaka_ratingbar"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:max="15"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="gone"
+                   
+                   />
+
+                    <TextView
+                        android:id="@+id/shuaka_bar_tv2"
+                        android:layout_width="8dp"
+                        android:gravity="right|center"
+                        android:layout_centerVertical="true"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@id/shuaka_ratingbar"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/red"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+               
+            </RelativeLayout>
+           
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" 
+                android:background="@drawable/corners_bg"
+                  android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                
+               >
+            </LinearLayout>
+             <TextView
+                    android:background="@drawable/corners_bg"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    
+                    android:id="@+id/textView1"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:textColor="@color/red"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="说明：请首先选择线别!工单、制程等信息!\n1、请核对白晚班上下班\n2、提示OK上岗成功，提示失败请检查报错信息!!\n3、如需获取其他制程天数，进界面第一时间选择天数，然后选择线体工单制程"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/thin_back"
+            ><TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="上岗/下岗成功人员信息如下：" 
+                android:textColor="@color/red"
+                android:textSize="30sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:background="@color/gold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="序号" />
+
+                <TextView
+                    android:background="@color/green"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="姓名" />
+
+                <TextView
+                    android:background="@color/gold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="工单" />
+
+                <TextView
+                    android:background="@color/green"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="制程" />
+                
+                
+                <TextView
+                     android:background="@color/gold"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="上岗/下岗" />
+                <TextView
+                    android:background="@color/green"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="时间" />
+               </LinearLayout>
+
+                <ListView
+                    android:id="@+id/shuaka_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/black" />
+          </LinearLayout>
+   </LinearLayout>
+        
+</LinearLayout>

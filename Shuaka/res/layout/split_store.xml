@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="fill_parent" android:layout_height="fill_parent"
+    		  android:orientation="vertical" >
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		  	  android:orientation="vertical" style="@style/style_1">
+    	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+    	    		  android:orientation="horizontal">
+        	<TextView android:layout_width="70dp" android:layout_height="wrap_content"
+        	    	  android:text="@string/split_batnum" android:textSize="14dp"/>
+        	<EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+        	    	  android:textSize="12dp" 
+        	    	  android:layout_marginLeft="8dp"  android:singleLine="true"
+        	    	  android:id="@+id/edt_split_batnum"/>
+    	</LinearLayout>
+    	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+    	              android:layout_marginTop="5dp">
+        	<TextView android:layout_width="70dp" android:layout_height="wrap_content"
+        	    	  android:text="@string/slit_amount" 
+        	    	  android:textSize="14dp"/>
+        	<EditText android:layout_width="fill_parent" android:layout_height="wrap_content"
+        	    	  android:inputType="numberDecimal"	 android:textSize="12dp"
+        	    	  android:singleLine="true"  android:layout_marginLeft="8dp"  
+        	    	  android:id="@+id/edt_split_amount" />
+    	</LinearLayout>
+    	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" 
+    	              android:layout_marginTop="5dp">
+        	<TextView android:layout_width="70dp" android:layout_height="wrap_content"
+        	    	  android:text="@string/target_batnum" android:textSize="14dp"/>
+        	<EditText android:layout_width="fill_parent"  android:layout_height="wrap_content"
+        	          android:layout_marginLeft="8dp"  android:singleLine="true"
+        	    	  android:id="@+id/edt_target_batnum"  android:textSize="12dp"/>
+    	</LinearLayout>
+    	<include layout="@layout/common_btngroup_1" android:id="@+id/btnGroups"/>      
+    </LinearLayout>
+    <include layout="@layout/common_edt_operatedetails" android:id="@+id/common_edtView_operateDetails"/>
+
+</LinearLayout>

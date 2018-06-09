@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="fill_parent" android:layout_height="fill_parent"
+    		  android:orientation="vertical" android:background="@color/thin_back">
+    <RadioGroup android:layout_width="fill_parent" android:layout_height="wrap_content"
+				     android:orientation="horizontal"  android:id="@+id/radioGroup_tabhost1">
+		<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					     android:id="@+id/btn_first_tab" style="@style/main_btn_style"
+					     android:text="@string/prepare_operate"/>
+		<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" 
+					     android:id="@id/btn_second_tab"  style="@style/main_btn_style" android:text="@string/second_tab_txt"/>
+	</RadioGroup>
+	<include layout="@layout/common_tabhost"/>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

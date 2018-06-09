@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:background="@drawable/qq"
+    android:orientation="vertical" >
+
+    <ScrollView
+  
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp" 
+                android:layout_marginTop="13dp">
+                <!-- 天津程序，条码筛选出不一致规则的条码    -->
+                <TextView
+                    android:id="@+id/lab_file2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/count"
+                    android:gravity="center"
+                    android:text="条码筛选记录"
+                    android:textColor="@color/red" />
+                <!-- 天津程序，紫米彩盒绑定-->
+                <TextView
+                    android:id="@+id/lab_file2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_file2_1"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/area"
+                    android:gravity="center"
+                    android:text="紫米彩盒绑定"
+                    android:textColor="@color/red"/>
+                
+                  <!-- 天津程序，紫米中箱绑定-->
+                   <TextView
+                    android:id="@+id/lab_file2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_file2_2"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/area"
+                    android:gravity="center"
+                    android:text="紫米彩盒装箱"
+                    android:textColor="@color/red"/>
+                     <TextView
+                    android:id="@+id/lab_file2_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_file2_3"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/area"
+                    android:gravity="center"
+                    android:text="紫米OQC抽检"
+                    android:textColor="@color/red"/>
+                      <TextView
+                    android:id="@+id/lab_file2_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:layout_toRightOf="@+id/lab_file2_4"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/area"
+                    android:gravity="center"
+                    android:text="紫米电源投入"
+                    android:textColor="@color/red"/>
+                      
+                      
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp" 
+                android:layout_marginTop="13dp">
+                <!-- 天津程序，条码筛选出不一致规则的条码    -->
+                <TextView
+                    android:id="@+id/lab_file2_6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/area"
+                    android:gravity="center"
+                    android:text="紫米电源维修"
+                    android:textColor="@color/red"/> 
+                     <TextView
+                    android:id="@+id/lab_file2_7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/area"
+                    android:layout_toRightOf="@+id/lab_file2_6"
+                    android:gravity="center"
+                    android:text="PB05电源 测试"
+                    android:textColor="@color/red"/> 
+                    
+                    <TextView
+                    android:id="@+id/lab_file2_8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="87dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/area"
+                    android:layout_toRightOf="@+id/lab_file2_7"
+                    android:gravity="center"
+                    android:text="通用过站程序"
+                    android:textColor="@color/red"/> 
+                    <TextView
+                    android:id="@+id/lab_file2_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="95dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/area"
+                    android:layout_toRightOf="@+id/lab_file2_8"
+                    android:gravity="center"
+                    android:text="通用DIP—启动"
+                    android:textColor="@color/red"/> 
+                      <TextView
+                    android:id="@+id/lab_file2_10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="90dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/area"
+                    android:layout_toRightOf="@+id/lab_file2_9"
+                    android:gravity="center"
+                    android:text="手环DIP—启动"
+                    android:textColor="@color/red"/> 
+                      
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp" 
+                android:layout_marginTop="13dp">
+                <!-- 天津程序，条码筛选出不一致规则的条码    -->
+                <TextView
+                    android:id="@+id/lab_file2_11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:drawablePadding="3dp"
+                    android:drawableTop="@drawable/area"
+                    android:gravity="center"
+                    android:text="天津不良统计"
+                    android:textColor="@color/red"/> 
+                   
+                      
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

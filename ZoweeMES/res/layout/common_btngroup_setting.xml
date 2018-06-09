@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    		  android:layout_width="fill_parent" android:layout_height="wrap_content"
+    		  android:orientation="horizontal" android:gravity="center"
+    		  android:paddingTop="3px" android:paddingBottom="3px">
+    <Button  android:layout_width="wrap_content" android:layout_height="wrap_content"
+             style="@style/btn_comBtnGroup"
+			 android:text="@string/update"	android:id ="@+id/btn_update"/>
+     <Button  android:layout_width="wrap_content" android:layout_height="wrap_content"
+              style="@style/btn_comBtnGroup"
+			  android:text="@string/abolish"	android:id ="@+id/btn_cancel"/>
+     <Button  android:layout_width="wrap_content" android:layout_height="wrap_content"
+         	  style="@style/btn_comBtnGroup"
+			  android:text="@string/restore"	android:id ="@+id/btn_restore"/>
+</LinearLayout>
